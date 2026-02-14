@@ -62,7 +62,7 @@ export default function GuidePage() {
 
   const [guide, setGuide] = useState<GuideData | null>(null);
   const [activeSection, setActiveSection] = useState<SectionKey>("introduction");
-  const [openSections, setOpenSections] = useState<Set<SectionKey>>(new Set(["introduction"]));
+  const [openSections, setOpenSections] = useState<Set<SectionKey>>(new Set());
   const [openPoints, setOpenPoints] = useState<Set<number>>(new Set());
   const sectionRefs = useRef<Record<SectionKey, HTMLElement | null>>({
     introduction: null,
