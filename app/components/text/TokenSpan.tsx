@@ -19,8 +19,8 @@ const layerColors: Record<number, string> = {
 export function TokenSpan({ token, currentLayer, isActive, onClick }: TokenSpanProps) {
   const isSymbol = token.grammarTag.pos === "記号";
 
-  // 読解レイヤー (0): 全トークンをプレーンテキストとして表示
-  if (currentLayer === 0) {
+  // 読解レイヤー (5): 全トークンをプレーンテキストとして表示
+  if (currentLayer === 5) {
     return (
       <span className="inline">
         {token.furigana ? (

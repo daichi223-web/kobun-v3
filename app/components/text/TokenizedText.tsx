@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Sentence, LayerId, TextAnalysis, ReadingAnnotation } from "@/app/lib/types";
+import type { Sentence, LayerId, TextAnalysis, ReadingAnnotation, ReadingHintType } from "@/app/lib/types";
 import { TokenSpan } from "./TokenSpan";
 import { GrammarPopover } from "./GrammarPopover";
 
@@ -14,6 +14,18 @@ interface TokenizedTextProps {
   readingAnnotation?: ReadingAnnotation | null;
 }
 
+const hintMeta: Record<ReadingHintType, { icon: string; color: string; bg: string }> = {
+  subject:   { icon: "👤", color: "text-blue-700",   bg: "bg-blue-50" },
+  grammar:   { icon: "🔤", color: "text-amber-700",  bg: "bg-amber-50" },
+  structure: { icon: "🔗", color: "text-purple-700", bg: "bg-purple-50" },
+  method:    { icon: "💡", color: "text-green-700",  bg: "bg-green-50" },
+  vocab:     { icon: "📚", color: "text-purple-700", bg: "bg-purple-50" },
+};
+
+const hintLabel: Record<ReadingHintType, string> = {
+  subject: "主語", grammar: "文法", structure: "構造", method: "読解法", vocab: "語彙",
+};
+
 export function TokenizedText({
   sentence,
   currentLayer,
@@ -23,6 +35,7 @@ export function TokenizedText({
   readingAnnotation,
 }: TokenizedTextProps) {
   const [activeTokenId, setActiveTokenId] = useState<string | null>(null);
+  const [openHints, setOpenHints] = useState<Set<number>>(new Set());
 
   const activeToken = activeTokenId
     ? sentence.tokens.find((t) => t.id === activeTokenId) ?? null
@@ -41,6 +54,15 @@ export function TokenizedText({
     }
   };
 
+  const toggleHint = (index: number) => {
+    setOpenHints((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) next.delete(index);
+      else next.add(index);
+      return next;
+    });
+  };
+
   return (
     <div className="relative leading-[2.2] text-lg">
       {sentence.tokens.map((token) => (
@@ -54,25 +76,49 @@ export function TokenizedText({
       ))}
 
       {/* 読解レイヤーのアノテーション */}
-      {currentLayer === 0 && readingAnnotation && (
-        <div className="mt-2 rounded-lg bg-layer-0/5 border border-layer-0/20 p-3 space-y-1.5">
-          <div className="flex items-center gap-2">
-            {readingAnnotation.scene && (
-              <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-layer-0/15 text-layer-0">
-                {readingAnnotation.scene}
-              </span>
-            )}
-            <span className="text-xs font-bold text-layer-0">
-              主語: {readingAnnotation.subject}
-            </span>
-          </div>
-          <p className="text-xs leading-relaxed text-sumi/70">
-            {readingAnnotation.note}
+      {currentLayer === 5 && readingAnnotation && (
+        <div className="mt-2 rounded-lg bg-layer-5/5 border border-layer-5/20 p-3 space-y-2">
+          <p className="text-xs font-bold text-layer-5 leading-relaxed">
+            {readingAnnotation.guide}
           </p>
+          <div className="space-y-1">
+            {readingAnnotation.hints.map((hint, i) => {
+              const meta = hintMeta[hint.type];
+              const isOpen = openHints.has(i);
+              return (
+                <div key={i} className="rounded-md border border-sumi/10 overflow-hidden">
+                  <button
+                    onClick={() => toggleHint(i)}
+                    className="w-full flex items-center gap-2 px-2.5 py-1.5 text-left hover:bg-sumi/[0.03] transition-colors"
+                  >
+                    <span className="text-xs">{meta.icon}</span>
+                    <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${meta.bg} ${meta.color}`}>
+                      {hintLabel[hint.type]}
+                    </span>
+                    <span className="text-xs font-bold text-sumi/80 flex-1">{hint.label}</span>
+                    <span className={`text-[9px] text-sumi/40 transition-transform ${isOpen ? "rotate-180" : ""}`}>
+                      ▼
+                    </span>
+                  </button>
+                  {isOpen && (
+                    <div className="px-3 pb-2 pt-1">
+                      <ul className="space-y-1">
+                        {hint.points.map((pt, j) => (
+                          <li key={j} className="text-xs leading-relaxed text-sumi/70 pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-sumi/30">
+                            {pt}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
 
-      {activeToken && currentLayer !== 0 && (
+      {activeToken && currentLayer !== 5 && (
         <GrammarPopover
           token={activeToken}
           currentLayer={currentLayer}

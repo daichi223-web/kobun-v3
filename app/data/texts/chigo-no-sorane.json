@@ -6,11 +6,6 @@
   "difficulty": 1,
   "layers": [
     {
-      "id": 0,
-      "label": "読解",
-      "description": "主語・場面・文脈を把握しながら通読する"
-    },
-    {
       "id": 1,
       "label": "用言の活用",
       "description": "動詞・形容詞・形容動詞の活用を分析する"
@@ -32,6 +27,12 @@
       "label": "敬語",
       "description": "敬語の種類と対象を分析する",
       "prerequisite": 3
+    },
+    {
+      "id": 5,
+      "label": "読解",
+      "description": "文法知識を総動員して読み方の手がかりを掴む",
+      "prerequisite": 4
     }
   ],
   "sentences": [

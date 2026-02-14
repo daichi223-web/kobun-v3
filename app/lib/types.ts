@@ -3,8 +3,8 @@
  */
 
 /** 文法層の定義 */
-export type LayerId = 0 | 1 | 2 | 3 | 4;
-// 0=読解, 1=用言, 2=助動詞, 3=助詞, 4=敬語
+export type LayerId = 1 | 2 | 3 | 4 | 5;
+// 1=用言, 2=助動詞, 3=助詞, 4=敬語, 5=読解
 
 export interface KobunText {
   id: string;
@@ -97,11 +97,18 @@ export interface ReadingGuide {
   annotations: ReadingAnnotation[];
 }
 
+export type ReadingHintType = "subject" | "grammar" | "structure" | "method" | "vocab";
+
+export interface ReadingHint {
+  type: ReadingHintType;
+  label: string;
+  points: string[];
+}
+
 export interface ReadingAnnotation {
   sentenceId: string;
-  subject: string;
-  note: string;
-  scene?: string;
+  guide: string;
+  hints: ReadingHint[];
 }
 
 /** 進捗データ（localStorage） */

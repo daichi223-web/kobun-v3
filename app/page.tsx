@@ -31,11 +31,11 @@ const grammarCategories = [
 ];
 
 const layerBgColors: Record<number, string> = {
-  0: "bg-layer-0",
   1: "bg-layer-1",
   2: "bg-layer-2",
   3: "bg-layer-3",
   4: "bg-layer-4",
+  5: "bg-layer-5",
 };
 
 export default function Home() {
@@ -63,9 +63,9 @@ export default function Home() {
         {texts.map((t) => {
           const p = progress[t.id];
           const completedLayers = p?.completedLayers?.length ?? 0;
-          const currentLayer = p?.currentLayer ?? 0;
+          const currentLayer = p?.currentLayer ?? 1;
           const isStarted = !!p;
-          const linkLayer = isStarted ? currentLayer : 0;
+          const linkLayer = isStarted ? currentLayer : 1;
 
           return (
             <div
@@ -83,21 +83,21 @@ export default function Home() {
                     <div className="flex items-center gap-2 mt-2">
                       {/* Layer進捗ドット */}
                       <div className="flex gap-1">
-                        {Array.from({ length: t.totalLayers }, (_, i) => i).map(
+                        {Array.from({ length: t.totalLayers }, (_, i) => i + 1).map(
                           (layer) => (
                             <span
                               key={layer}
                               className={`h-5 rounded-full text-[10px] font-bold flex items-center justify-center
-                                ${layer === 0 ? "px-1.5" : "w-5"}
+                                ${layer === 5 ? "px-1.5" : "w-5"}
                                 ${
-                                  layer > 0 && p?.completedLayers?.includes(layer as 1|2|3|4)
+                                  p?.completedLayers?.includes(layer as 1|2|3|4|5)
                                     ? `${layerBgColors[layer]} text-white`
                                     : currentLayer === layer
                                     ? `border-2 border-current ${layerBgColors[layer]?.replace("bg-", "text-")}`
                                     : "bg-sumi/5 text-sumi/20"
                                 }`}
                             >
-                              {layer === 0 ? "読" : layer}
+                              {layer === 5 ? "読" : layer}
                             </span>
                           )
                         )}

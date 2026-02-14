@@ -9,11 +9,11 @@ interface LayerSelectorProps {
 }
 
 const layerBgColors: Record<number, string> = {
-  0: "bg-layer-0",
   1: "bg-layer-1",
   2: "bg-layer-2",
   3: "bg-layer-3",
   4: "bg-layer-4",
+  5: "bg-layer-5",
 };
 
 export function LayerSelector({ layers, currentLayer, onChange }: LayerSelectorProps) {
@@ -32,7 +32,7 @@ export function LayerSelector({ layers, currentLayer, onChange }: LayerSelectorP
             onClick={() => !isLocked && onChange(layer.id)}
             disabled={isLocked}
             className={`shrink-0 h-7 rounded-full text-xs font-bold transition-all
-              ${layer.id === 0 ? "px-2" : "w-7"}
+              ${layer.id === 5 ? "px-2" : "w-7"}
               ${
                 isActive
                   ? `${layerBgColors[layer.id]} text-white shadow-sm`
@@ -42,7 +42,7 @@ export function LayerSelector({ layers, currentLayer, onChange }: LayerSelectorP
               }`}
             title={layer.label}
           >
-            {layer.id === 0 ? "読" : layer.id}
+            {layer.id === 5 ? "読" : layer.id}
           </button>
         );
       })}

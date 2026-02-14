@@ -10,11 +10,11 @@
   --washi: #f5f0e8;
 
   /* v3 追加: layer色（鮮やか・視認性重視） */
-  --layer-0: #d97706;   /* 読解: 琥珀 */
   --layer-1: #2563eb;   /* 用言: 青 */
   --layer-2: #dc2626;   /* 助動詞: 赤 */
   --layer-3: #16a34a;   /* 助詞: 緑 */
   --layer-4: #9333ea;   /* 敬語: 紫 */
+  --layer-5: #d97706;   /* 読解: 琥珀 */
   --scaffold: #9ca3af;  /* 足場: 灰 */
 }
 
@@ -26,11 +26,11 @@
   --color-kin: var(--kin);
   --color-sakura: var(--sakura);
   --color-washi: var(--washi);
-  --color-layer-0: var(--layer-0);
   --color-layer-1: var(--layer-1);
   --color-layer-2: var(--layer-2);
   --color-layer-3: var(--layer-3);
   --color-layer-4: var(--layer-4);
+  --color-layer-5: var(--layer-5);
   --color-scaffold: var(--scaffold);
   --font-serif: var(--font-noto-serif-jp), "Yu Mincho", "Hiragino Mincho Pro", serif;
 }
