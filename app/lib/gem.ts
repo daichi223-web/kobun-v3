@@ -11,6 +11,7 @@ const LAYER_LABELS: Record<LayerId, string> = {
   2: "助動詞",
   3: "助詞",
   4: "敬語",
+  5: "読解",
 };
 
 /** ポップオーバーから先生AIに飛ぶURLを構築する */
