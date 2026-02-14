@@ -88,13 +88,18 @@ export interface GrammarTopic {
   category: "用言" | "助動詞" | "助詞" | "敬語" | "識別";
   layer: LayerId;
   summary: string;
+  keyPoints?: string[];
+  studySteps?: string[];
   sections: GrammarSection[];
   textExamples: TextExample[];
 }
 
+export type SectionPriority = "essential" | "important" | "supplementary";
+
 export interface GrammarSection {
   heading: string;
   content: string;
+  priority?: SectionPriority;
   image?: string;
 }
 

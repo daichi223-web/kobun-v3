@@ -2,22 +2,51 @@
 
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
-import type { GrammarTopic } from "@/app/lib/types";
+import type { GrammarTopic, GrammarSection, SectionPriority } from "@/app/lib/types";
 import { TextExampleCard } from "@/app/components/reference/TextExampleCard";
 import { getGemBaseUrl, getNotebookLmUrl } from "@/app/lib/gem";
 import Link from "next/link";
+
+const priorityOrder: Record<SectionPriority, number> = {
+  essential: 0,
+  important: 1,
+  supplementary: 2,
+};
+
+const priorityLabel: Record<SectionPriority, string> = {
+  essential: "必須",
+  important: "重要",
+  supplementary: "補足",
+};
+
+const priorityStyle: Record<SectionPriority, string> = {
+  essential: "bg-shu/10 text-shu border-shu/30",
+  important: "bg-kin/10 text-kin border-kin/30",
+  supplementary: "bg-sumi/5 text-sumi/50 border-sumi/10",
+};
 
 export default function ReferenceTopicPage() {
   const params = useParams();
   const topicId = params.topicId as string;
   const [topic, setTopic] = useState<GrammarTopic | null>(null);
   const [error, setError] = useState(false);
+  const [openSections, setOpenSections] = useState<Set<number>>(new Set());
+  const [showExamples, setShowExamples] = useState(false);
 
   useEffect(() => {
     import(`@/app/data/grammar/${topicId}.json`)
       .then((mod) => setTopic(mod.default))
       .catch(() => setError(true));
   }, [topicId]);
+
+  const toggleSection = (index: number) => {
+    setOpenSections((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) next.delete(index);
+      else next.add(index);
+      return next;
+    });
+  };
 
   if (error) {
     return (
@@ -43,6 +72,15 @@ export default function ReferenceTopicPage() {
     );
   }
 
+  // Sort sections by priority
+  const sortedSections = topic.sections
+    .map((s, i) => ({ section: s, originalIndex: i }))
+    .sort((a, b) => {
+      const pa = priorityOrder[a.section.priority || "supplementary"];
+      const pb = priorityOrder[b.section.priority || "supplementary"];
+      return pa - pb;
+    });
+
   return (
     <div className="min-h-dvh max-w-2xl mx-auto p-6">
       {/* ヘッダー */}
@@ -58,32 +96,105 @@ export default function ReferenceTopicPage() {
       <h1 className="text-2xl font-bold mb-2">{topic.title}</h1>
       <p className="text-sm text-scaffold mb-6">{topic.summary}</p>
 
-      {/* セクション */}
-      <div className="space-y-8">
-        {topic.sections.map((section, i) => (
-          <section key={i}>
-            <h2 className="text-lg font-bold border-b border-sumi/10 pb-1 mb-3">
-              {section.heading}
-            </h2>
-            <div className="prose-sm prose-table:text-sm">
-              <MarkdownContent content={section.content} />
+      {/* ポイント */}
+      {topic.keyPoints && topic.keyPoints.length > 0 && (
+        <div className="mb-6 p-4 bg-shu/5 border border-shu/20 rounded-lg">
+          <h2 className="text-sm font-bold text-shu mb-2">ポイント</h2>
+          <ul className="space-y-1.5">
+            {topic.keyPoints.map((point, i) => (
+              <li
+                key={i}
+                className="text-sm leading-relaxed pl-4 relative before:content-['◆'] before:absolute before:left-0 before:text-shu before:text-xs"
+              >
+                {point}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* 覚える手順 */}
+      {topic.studySteps && topic.studySteps.length > 0 && (
+        <div className="mb-6 p-4 bg-kin/5 border border-kin/20 rounded-lg">
+          <h2 className="text-sm font-bold text-kin mb-2">覚える手順</h2>
+          <ol className="space-y-1.5">
+            {topic.studySteps.map((step, i) => (
+              <li key={i} className="text-sm leading-relaxed flex gap-2">
+                <span className="shrink-0 w-5 h-5 rounded-full bg-kin text-white text-xs font-bold flex items-center justify-center mt-0.5">
+                  {i + 1}
+                </span>
+                <span>{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
+
+      {/* セクション（アコーディオン） */}
+      <div className="space-y-2">
+        {sortedSections.map(({ section, originalIndex }) => {
+          const isOpen = openSections.has(originalIndex);
+          const priority = section.priority || "supplementary";
+
+          return (
+            <div
+              key={originalIndex}
+              className="border border-sumi/10 rounded-lg overflow-hidden"
+            >
+              <button
+                onClick={() => toggleSection(originalIndex)}
+                className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-sumi/[0.03] transition-colors"
+              >
+                <h2 className="text-sm font-bold flex-1">{section.heading}</h2>
+                <span
+                  className={`shrink-0 px-1.5 py-0.5 text-[10px] font-bold rounded border ${priorityStyle[priority]}`}
+                >
+                  {priorityLabel[priority]}
+                </span>
+                <span
+                  className={`text-xs text-sumi/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                >
+                  ▼
+                </span>
+              </button>
+
+              {isOpen && (
+                <div className="px-4 pb-4 border-t border-sumi/5">
+                  <div className="pt-3 prose-sm prose-table:text-sm">
+                    <MarkdownContent content={section.content} />
+                  </div>
+                </div>
+              )}
             </div>
-          </section>
-        ))}
+          );
+        })}
       </div>
 
       {/* テキスト用例 */}
       {topic.textExamples.length > 0 && (
-        <section className="mt-10">
-          <h2 className="text-lg font-bold border-b border-sumi/10 pb-1 mb-3">
-            テキスト用例
-          </h2>
-          <div className="space-y-3">
-            {topic.textExamples.map((example, i) => (
-              <TextExampleCard key={i} example={example} />
-            ))}
-          </div>
-        </section>
+        <div className="mt-6 border border-sumi/10 rounded-lg overflow-hidden">
+          <button
+            onClick={() => setShowExamples(!showExamples)}
+            className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-sumi/[0.03] transition-colors"
+          >
+            <h2 className="text-sm font-bold flex-1">
+              テキスト用例（{topic.textExamples.length}件）
+            </h2>
+            <span
+              className={`text-xs text-sumi/40 transition-transform ${showExamples ? "rotate-180" : ""}`}
+            >
+              ▼
+            </span>
+          </button>
+
+          {showExamples && (
+            <div className="px-4 pb-4 border-t border-sumi/5 pt-3 space-y-3">
+              {topic.textExamples.map((example, i) => (
+                <TextExampleCard key={i} example={example} />
+              ))}
+            </div>
+          )}
+        </div>
       )}
 
       {/* 先生AIに聞く / NotebookLM */}
@@ -186,7 +297,6 @@ function MarkdownContent({ content }: { content: string }) {
 }
 
 function InlineMarkdown({ text }: { text: string }) {
-  // **bold** のみ対応
   const parts = text.split(/(\*\*[^*]+\*\*)/);
   return (
     <>
@@ -212,7 +322,6 @@ function MarkdownTable({ lines }: { lines: string[] }) {
       .filter(Boolean);
 
   const headers = parseRow(lines[0]);
-  // Skip separator (lines[1])
   const rows = lines.slice(2).map(parseRow);
 
   return (
