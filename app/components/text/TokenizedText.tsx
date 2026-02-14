@@ -10,6 +10,7 @@ interface TokenizedTextProps {
   currentLayer: LayerId;
   analysis: TextAnalysis | null;
   textTitle: string;
+  textId: string;
   onTokenView: (tokenId: string) => void;
   readingAnnotation?: ReadingAnnotation | null;
 }
@@ -31,6 +32,7 @@ export function TokenizedText({
   currentLayer,
   analysis,
   textTitle,
+  textId,
   onTokenView,
   readingAnnotation,
 }: TokenizedTextProps) {
@@ -124,6 +126,7 @@ export function TokenizedText({
           currentLayer={currentLayer}
           analysis={activeAnalysis}
           textTitle={textTitle}
+          textId={textId}
           sentenceText={sentence.originalText}
           onClose={() => setActiveTokenId(null)}
         />

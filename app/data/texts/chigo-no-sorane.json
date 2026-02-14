@@ -35,6 +35,70 @@
       "prerequisite": 4
     }
   ],
+  "learningPoints": {
+    "overview": [
+      "初学者向けの短編説話。児（ちご）の心理描写を通じて、古文の基本文法を一通り学べる",
+      "「む」の意味識別（意志・推量・婉曲・仮定）が繰り返し出現し、文脈による判別を練習できる",
+      "主語の省略と切り替わりが頻出。「を・に・が・ど・ば」の接続助詞で主語が変わるパターンを掴む",
+      "「もぞ」「な〜そ」など複合的な表現が登場し、助詞・助動詞の連携を学べる"
+    ],
+    "byLayer": [
+      {
+        "layer": 1,
+        "label": "用言の活用",
+        "points": [
+          "四段活用が最多。「言ふ」「聞く」「待つ」「起こす」等。「ず」を付けてア段→四段と判定",
+          "下二段活用「いらふ（答ふ）」「寝（ぬ）」が繰り返し登場。語幹なしの一文字動詞「寝」に注意",
+          "サ変「す」が「し・す・する」と活用変化して複数回出現。古文最重要の変格活用",
+          "ク活用形容詞「わろし」「幼し」とシク活用形容詞「うれし」「わびし」の区別"
+        ]
+      },
+      {
+        "layer": 2,
+        "label": "助動詞",
+        "points": [
+          "「む」が7回出現。主語と文脈で意志（一人称）・推量（三人称）・婉曲（連体形＋体言）・仮定を識別",
+          "「けり」が4回出現。地の文の叙述→過去、感動的場面→詠嘆を区別",
+          "「たり」の完了と存続の識別。「寝たるに」＝寝ている状態（存続）",
+          "「ぬ」完了 vs 「ず」連体形の識別。「なむ」＝強意「ぬ」未然形＋推量「む」",
+          "「る」受身が2回（「よばれ」）。四段未然形への接続で受身と判定"
+        ]
+      },
+      {
+        "layer": 3,
+        "label": "助詞",
+        "points": [
+          "接続助詞「を」: 逆接的に文を転換し、主語が切り替わる（第一文→第二文）",
+          "接続助詞「ば」: 未然形＋ば＝仮定（もし〜たら）、已然形＋ば＝確定（〜したので）の区別が重要",
+          "「もぞ」（副助詞「も」＋係助詞「ぞ」）: 心配・懸念「〜したら困る」。係り結びで結びは連体形",
+          "「な〜そ」: 禁止表現。副詞「な」＋終助詞「そ」で「〜するな」",
+          "終助詞「かし」: 念押し・願望「〜してくれよ」"
+        ]
+      },
+      {
+        "layer": 4,
+        "label": "敬語",
+        "points": [
+          "「おはす」: サ変動詞。「いる」「行く」の尊敬語。僧に対して使用",
+          "「たまふ」: 尊敬の補助動詞「〜なさる」。「おどろかせたまへ」で二重尊敬",
+          "「たてまつる」: 謙譲の補助動詞「〜申し上げる」。「起こしたてまつりそ」",
+          "「さぶらふ」: 丁寧語「〜ございます」。「さぶらはむ」＝申し上げましょう",
+          "敬語の方向: 僧たち→児への配慮（幼い者への丁寧な扱い）"
+        ]
+      },
+      {
+        "layer": 5,
+        "label": "読解",
+        "points": [
+          "主語の把握: 「僧たち」と「児」の行動を追い、省略された主語を文脈から補う",
+          "児の心理変化: 期待→我慢→焦り→諦め→後悔、という感情の流れを読み取る",
+          "「そらね」の意味: 狸寝入り。タイトルが物語全体のテーマを示す",
+          "オチの構造: 「無期の後に」返事をしたことで狸寝入りがバレ、笑われる",
+          "説話の教訓: 欲を出して我慢しすぎると、かえって恥をかくという滑稽譚"
+        ]
+      }
+    ]
+  },
   "sentences": [
     {
       "id": "s1",
@@ -184,7 +248,8 @@
             "conjugationForm": "未然形",
             "baseForm": "す"
           },
-          "grammarRefId": "doushi-sahen"
+          "grammarRefId": "doushi-sahen",
+          "hint": "サ変「す」: 古文で最重要の変格活用。「せ・し・す・する・すれ・せよ」。「す」と「おはす」のみ。"
         },
         {
           "id": "s1-t14",
@@ -198,7 +263,8 @@
             "conjugationForm": "終止形"
           },
           "translation": "〜しよう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」意志: 主語が一人称（僧たち自身）→「〜しよう」。「いざ」が意志の手がかり。"
         },
         {
           "id": "s1-t15",
@@ -235,7 +301,8 @@
             "conjugationForm": "連用形",
             "baseForm": "言ふ"
           },
-          "grammarRefId": "doushi-yodan"
+          "grammarRefId": "doushi-yodan",
+          "hint": "四段活用: 最も多い活用型。「ず」を付けて「言は（ず）」→ア段＝四段と判定。"
         },
         {
           "id": "s1-t18",
@@ -250,7 +317,8 @@
             "baseForm": "けり"
           },
           "translation": "〜た（という）",
-          "grammarRefId": "jodoshi-keri"
+          "grammarRefId": "jodoshi-keri",
+          "hint": "「けり」過去: 地の文で事実を述べる→過去「〜した」。詠嘆ではない。"
         },
         {
           "id": "s1-t19",
@@ -263,7 +331,8 @@
             "meaning": "対象"
           },
           "translation": "を",
-          "grammarRefId": "joshi-kaku"
+          "grammarRefId": "joshi-kaku",
+          "hint": "接続助詞「を」: 逆接的に文を転換。この「を」で主語が「僧たち」→「この児」に切り替わる。"
         },
         {
           "id": "s1-t20",
@@ -350,7 +419,8 @@
             "conjugationForm": "連用形",
             "baseForm": "聞く"
           },
-          "grammarRefId": "doushi-yodan"
+          "grammarRefId": "doushi-yodan",
+          "hint": "四段活用: 「聞か（ず）」→ア段＝四段。カ行四段。"
         },
         {
           "id": "s2-t7",
@@ -365,7 +435,8 @@
             "baseForm": "けり"
           },
           "translation": "〜た",
-          "grammarRefId": "jodoshi-keri"
+          "grammarRefId": "jodoshi-keri",
+          "hint": "「けり」過去: 地の文の叙述→過去。「聞きけり」＝聞いていた。"
         },
         {
           "id": "s2-t8",
@@ -442,7 +513,8 @@
             "conjugationForm": "連体形"
           },
           "translation": "〜だろう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」婉曲: 連体形で体言に接続→婉曲「〜するような」。「し出ださむを」の「を」に注目。"
         },
         {
           "id": "s3-t7",
@@ -497,7 +569,8 @@
             "baseForm": "寝"
           },
           "furigana": "ね",
-          "grammarRefId": "doushi-shimo-nidan"
+          "grammarRefId": "doushi-shimo-nidan",
+          "hint": "下二段「寝（ぬ）」: 語幹がなく一文字。「寝（ね）・寝（ね）・寝（ぬ）・寝る（ぬる）・寝れ（ぬれ）・寝よ（ねよ）」。"
         },
         {
           "id": "s3-t11",
@@ -512,7 +585,8 @@
             "baseForm": "ず"
           },
           "translation": "〜ない",
-          "grammarRefId": "jodoshi-zu"
+          "grammarRefId": "jodoshi-zu",
+          "hint": "「ず」打消: 未然形接続。「寝ざらむ」＝寝ないだろう。ザリ活用「ざら」に注意。"
         },
         {
           "id": "s3-t12",
@@ -526,7 +600,8 @@
             "conjugationForm": "連体形"
           },
           "translation": "〜だろう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」推量: 「寝ざらむ」→打消推量「〜ないだろう」。"
         },
         {
           "id": "s3-t13",
@@ -564,7 +639,8 @@
             "baseForm": "わろし"
           },
           "translation": "みっともない",
-          "grammarRefId": "keiyoshi-ku"
+          "grammarRefId": "keiyoshi-ku",
+          "hint": "ク活用形容詞: 「わろし」→連用形「わろかり」。ラ変型活用語尾「〜かり」が付く。"
         },
         {
           "id": "s3-t16",
@@ -579,7 +655,8 @@
             "baseForm": "ぬ"
           },
           "translation": "きっと〜",
-          "grammarRefId": "jodoshi-nu"
+          "grammarRefId": "jodoshi-nu",
+          "hint": "「ぬ」強意: 「なむ」＝「ぬ」未然形＋「む」→強意＋推量「きっと〜だろう」。"
         },
         {
           "id": "s3-t17",
@@ -593,7 +670,8 @@
             "conjugationForm": "終止形"
           },
           "translation": "〜だろう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」推量: 「なむ」の「む」→推量。「わろかりなむ」＝みっともないだろう。"
         },
         {
           "id": "s3-t18",
@@ -699,7 +777,8 @@
             "baseForm": "る"
           },
           "translation": "〜される",
-          "grammarRefId": "jodoshi-ru"
+          "grammarRefId": "jodoshi-ru",
+          "hint": "「る」受身: 「よばれたらば」→「呼ばれたら」。四段未然形に接続→受身。"
         },
         {
           "id": "s4-t4",
@@ -727,7 +806,8 @@
             "meaning": "順接仮定"
           },
           "translation": "〜たら",
-          "grammarRefId": "joshi-setsuzoku"
+          "grammarRefId": "joshi-setsuzoku",
+          "hint": "接続助詞「ば」: 未然形＋「ば」＝順接仮定「もし〜たら」。已然形＋「ば」との区別が重要。"
         },
         {
           "id": "s4-t6",
@@ -752,7 +832,8 @@
             "baseForm": "いらふ"
           },
           "translation": "返事をする",
-          "grammarRefId": "doushi-shimo-nidan"
+          "grammarRefId": "doushi-shimo-nidan",
+          "hint": "下二段「いらふ」: 「いらへ（ず）」→エ段＝下二段。ハ行下二段。"
         },
         {
           "id": "s4-t8",
@@ -766,7 +847,8 @@
             "conjugationForm": "終止形"
           },
           "translation": "〜しよう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」意志: 主語が一人称（児自身）→意志「返事をしよう」。"
         },
         {
           "id": "s4-t9",
@@ -828,7 +910,8 @@
             "baseForm": "寝"
           },
           "furigana": "ね",
-          "grammarRefId": "doushi-shimo-nidan"
+          "grammarRefId": "doushi-shimo-nidan",
+          "hint": "下二段「寝」: 一文字動詞。「寝（ね）ず」→エ段＝下二段。"
         },
         {
           "id": "s4-t14",
@@ -843,7 +926,8 @@
             "baseForm": "たり"
           },
           "translation": "〜ている",
-          "grammarRefId": "jodoshi-tari"
+          "grammarRefId": "jodoshi-tari",
+          "hint": "「たり」存続: 「寝たるに」＝寝ている状態で。完了ではなく存続。"
         },
         {
           "id": "s4-t15",
@@ -939,7 +1023,8 @@
             "conjugationForm": "終止形"
           },
           "translation": "〜しよう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」丁寧な意志: 「さぶらはむ」＝申し上げましょう。謙譲＋意志。"
         },
         {
           "id": "s5-t6",
@@ -964,7 +1049,8 @@
             "baseForm": "おどろく"
           },
           "translation": "目を覚ます",
-          "grammarRefId": "doushi-yodan"
+          "grammarRefId": "doushi-yodan",
+          "hint": "重要語「おどろく」: 古文では「目を覚ます・はっとする」の意。現代語の「驚く」とは異なる。"
         },
         {
           "id": "s5-t8",
@@ -979,7 +1065,8 @@
             "baseForm": "す"
           },
           "translation": "〜させる",
-          "grammarRefId": "jodoshi-su"
+          "grammarRefId": "jodoshi-su",
+          "hint": "「す」尊敬: 「おどろかせたまへ」→尊敬の助動詞＋尊敬の補助動詞。二重尊敬。"
         },
         {
           "id": "s5-t9",
@@ -1076,7 +1163,8 @@
             "conjugationForm": "終止形",
             "baseForm": "うれし"
           },
-          "grammarRefId": "keiyoshi-shiku"
+          "grammarRefId": "keiyoshi-shiku",
+          "hint": "重要語「うれし」: 古文では「ありがたい・嬉しい」。起こしてもらえる喜びを表す。"
         },
         {
           "id": "s6-t2",
@@ -1102,7 +1190,8 @@
             "meaning": "対比"
           },
           "translation": "は",
-          "grammarRefId": "joshi-fuku-kakari"
+          "grammarRefId": "joshi-fuku-kakari",
+          "hint": "係助詞「は」: 「うれしとは思へども」→対比「うれしいとは思うけれど」。逆接の「ども」との呼応。"
         },
         {
           "id": "s6-t4",
@@ -1129,7 +1218,8 @@
             "meaning": "逆接"
           },
           "translation": "けれども",
-          "grammarRefId": "joshi-setsuzoku"
+          "grammarRefId": "joshi-setsuzoku",
+          "hint": "接続助詞「ども」: 逆接確定条件「〜けれども」。已然形に接続。"
         },
         {
           "id": "s6-t6",
@@ -1188,7 +1278,8 @@
             "baseForm": "いらふ"
           },
           "translation": "返事をする",
-          "grammarRefId": "doushi-shimo-nidan"
+          "grammarRefId": "doushi-shimo-nidan",
+          "hint": "下二段「いらふ」:「返事をする」の意。繰り返し登場する重要語。"
         },
         {
           "id": "s6-t11",
@@ -1202,7 +1293,8 @@
             "conjugationForm": "連体形"
           },
           "translation": "〜ような",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」仮定: 「いらへむも」→仮定「返事をするとしても」。連体形＋「も」。"
         },
         {
           "id": "s6-t12",
@@ -1254,7 +1346,8 @@
             "baseForm": "けり"
           },
           "translation": "〜ていた",
-          "grammarRefId": "jodoshi-keri"
+          "grammarRefId": "jodoshi-keri",
+          "hint": "「けり」過去: 「待ちけるか」＝待っていたのか。過去の事実。"
         },
         {
           "id": "s6-t16",
@@ -1293,7 +1386,8 @@
             "meaning": "添加"
           },
           "translation": "も",
-          "grammarRefId": "joshi-fuku-kakari"
+          "grammarRefId": "joshi-fuku-kakari",
+          "hint": "副助詞「も」→係助詞「ぞ」:「もぞ」＝心配・懸念「〜したら困る」。「待ちけるかともぞ思ふ」＝待っていたのかと思われたら困る。"
         },
         {
           "id": "s6-t19",
@@ -1306,7 +1400,8 @@
             "meaning": "強調（係助詞）"
           },
           "translation": "（強調）",
-          "grammarRefId": "kakari-musubi"
+          "grammarRefId": "kakari-musubi",
+          "hint": "係助詞「ぞ」: 「もぞ」の一部。強調の係助詞→結びは連体形「思ふ」。係り結びに注目。"
         },
         {
           "id": "s6-t20",
@@ -1401,7 +1496,8 @@
             "baseForm": "る"
           },
           "translation": "〜される",
-          "grammarRefId": "jodoshi-ru"
+          "grammarRefId": "jodoshi-ru",
+          "hint": "「る」受身: 「よばれて」＝呼ばれて。受身用法。"
         },
         {
           "id": "s7-t5",
@@ -1429,7 +1525,8 @@
             "baseForm": "いらふ"
           },
           "translation": "返事をする",
-          "grammarRefId": "doushi-shimo-nidan"
+          "grammarRefId": "doushi-shimo-nidan",
+          "hint": "下二段「いらふ」: 未然形「いらへ（ず）」→エ段で下二段と判定。"
         },
         {
           "id": "s7-t7",
@@ -1443,7 +1540,8 @@
             "conjugationForm": "終止形"
           },
           "translation": "〜しよう",
-          "grammarRefId": "jodoshi-mu"
+          "grammarRefId": "jodoshi-mu",
+          "hint": "「む」意志: 「いらへむとて」→「返事をしようとして」。意志。"
         },
         {
           "id": "s7-t8",
@@ -1456,7 +1554,8 @@
             "meaning": "理由"
           },
           "translation": "と思って",
-          "grammarRefId": "joshi-setsuzoku"
+          "grammarRefId": "joshi-setsuzoku",
+          "hint": "「とて」: 「〜しようとして」。意志の「む」＋引用の「とて」で動機を表す。"
         },
         {
           "id": "s7-t9",
@@ -1496,7 +1595,8 @@
             "baseForm": "たり"
           },
           "translation": "〜ている",
-          "grammarRefId": "jodoshi-tari"
+          "grammarRefId": "jodoshi-tari",
+          "hint": "「たり」存続: 「寝たるに」→「寝ている状態なのに」。"
         },
         {
           "id": "s7-t12",
@@ -1580,7 +1680,8 @@
             "pos": "副詞",
             "meaning": "禁止"
           },
-          "translation": "〜するな"
+          "translation": "〜するな",
+          "hint": "副詞「な」＋終助詞「そ」: 「な起こしたてまつりそ」＝起こし申し上げるな。「な〜そ」で禁止表現。"
         },
         {
           "id": "s8-t5",
@@ -1623,7 +1724,8 @@
             "meaning": "禁止"
           },
           "translation": "（〜な）",
-          "grammarRefId": "joshi-shujoshi"
+          "grammarRefId": "joshi-shujoshi",
+          "hint": "終助詞「そ」: 「な〜そ」禁止の後半。「な」と呼応して「〜するな」。"
         },
         {
           "id": "s8-t8",
@@ -1648,7 +1750,8 @@
             "baseForm": "幼し"
           },
           "furigana": "をさなき",
-          "grammarRefId": "keiyoshi-ku"
+          "grammarRefId": "keiyoshi-ku",
+          "hint": "ク活用形容詞: 「幼し」→連体形「幼き」。「〜き」は連体形の目印。"
         },
         {
           "id": "s8-t10",
@@ -1716,7 +1819,8 @@
             "baseForm": "ぬ"
           },
           "translation": "〜てしまった",
-          "grammarRefId": "jodoshi-nu"
+          "grammarRefId": "jodoshi-nu",
+          "hint": "「ぬ」完了: 「寝入りたまひにけり」＝お眠りになってしまった。完了の「ぬ」。"
         },
         {
           "id": "s8-t15",
@@ -1730,7 +1834,8 @@
             "conjugationForm": "終止形"
           },
           "translation": "〜たなあ",
-          "grammarRefId": "jodoshi-keri"
+          "grammarRefId": "jodoshi-keri",
+          "hint": "「けり」詠嘆: 伝聞的ニュアンス。「〜してしまったよ」。"
         },
         {
           "id": "s8-t16",
@@ -1804,7 +1909,8 @@
             "conjugationForm": "連用形",
             "baseForm": "す"
           },
-          "grammarRefId": "doushi-sahen"
+          "grammarRefId": "doushi-sahen",
+          "hint": "サ変「す」: 連用形「し」。「〜のしければ」で「〜したので」の意。"
         },
         {
           "id": "s8-t22",
@@ -1832,7 +1938,8 @@
             "meaning": "順接確定"
           },
           "translation": "〜ので",
-          "grammarRefId": "joshi-setsuzoku"
+          "grammarRefId": "joshi-setsuzoku",
+          "hint": "接続助詞「ば」: 已然形＋「ば」＝順接確定「〜したので」。原因理由を表す。"
         },
         {
           "id": "s8-t24",
@@ -1885,7 +1992,8 @@
             "baseForm": "わびし"
           },
           "translation": "困った・つらい",
-          "grammarRefId": "keiyoshi-shiku"
+          "grammarRefId": "keiyoshi-shiku",
+          "hint": "重要語「わびし」: 古文の重要感情語。「つらい・心細い・情けない」。ぼたもちを食べ損ねた悲しみ。"
         },
         {
           "id": "s9-t4",
@@ -1983,7 +2091,8 @@
             "meaning": "願望（終助詞）"
           },
           "translation": "〜てくれよ",
-          "grammarRefId": "joshi-shujoshi"
+          "grammarRefId": "joshi-shujoshi",
+          "hint": "終助詞「かし」: 念押し・願望「〜してくれよ」。「起こせかし」＝起こしてくれよ。"
         },
         {
           "id": "s9-t12",
@@ -2047,7 +2156,8 @@
             "meaning": "順接確定"
           },
           "translation": "〜と",
-          "grammarRefId": "joshi-setsuzoku"
+          "grammarRefId": "joshi-setsuzoku",
+          "hint": "接続助詞「ば」: 已然形＋「ば」＝確定条件「〜すると」。"
         },
         {
           "id": "s9-t17",
@@ -2136,7 +2246,8 @@
             "meaning": "強調"
           },
           "translation": "に（強調）",
-          "grammarRefId": "joshi-kaku"
+          "grammarRefId": "joshi-kaku",
+          "hint": "副助詞「に」: 「食ひに食ふ」→強調「どんどん食べる」。反復強調の用法。"
         },
         {
           "id": "s10-t7",
@@ -2187,7 +2298,8 @@
             "conjugationForm": "連用形",
             "baseForm": "す"
           },
-          "grammarRefId": "doushi-sahen"
+          "grammarRefId": "doushi-sahen",
+          "hint": "サ変「す」: 連用形「し」。「音のしければ」。"
         },
         {
           "id": "s10-t11",
@@ -2240,7 +2352,8 @@
             "baseForm": "ずちなし"
           },
           "translation": "どうしようもなく",
-          "grammarRefId": "keiyoshi-ku"
+          "grammarRefId": "keiyoshi-ku",
+          "hint": "重要語「ずちなし」:「すべなし」の変化形。「どうしようもない・仕方がない」。"
         },
         {
           "id": "s10-t15",
@@ -2381,7 +2494,8 @@
             "baseForm": "いらふ"
           },
           "translation": "返事をする",
-          "grammarRefId": "doushi-shimo-nidan"
+          "grammarRefId": "doushi-shimo-nidan",
+          "hint": "下二段「いらふ」: 連用形「いらへ」。"
         },
         {
           "id": "s10-t27",
@@ -2396,7 +2510,8 @@
             "baseForm": "たり"
           },
           "translation": "〜た",
-          "grammarRefId": "jodoshi-tari"
+          "grammarRefId": "jodoshi-tari",
+          "hint": "「たり」完了: 「いらへたりければ」＝返事をしたところ。完了。"
         },
         {
           "id": "s10-t28",
@@ -2411,7 +2526,8 @@
             "baseForm": "けり"
           },
           "translation": "〜た",
-          "grammarRefId": "jodoshi-keri"
+          "grammarRefId": "jodoshi-keri",
+          "hint": "「けり」過去: 「いらへたりければ」→已然形＋「ば」で確定条件。"
         },
         {
           "id": "s10-t29",

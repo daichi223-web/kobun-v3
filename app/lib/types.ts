@@ -13,7 +13,20 @@ export interface KobunText {
   genre: "説話" | "物語" | "日記" | "随筆" | "和歌";
   difficulty: 1 | 2 | 3;
   layers: LayerDefinition[];
+  learningPoints?: LearningPoints;
   sentences: Sentence[];
+}
+
+/** 学習ポイント（単元全体 + レイヤー別） */
+export interface LearningPoints {
+  overview: string[];
+  byLayer: LayerPoints[];
+}
+
+export interface LayerPoints {
+  layer: LayerId;
+  label: string;
+  points: string[];
 }
 
 export interface LayerDefinition {
@@ -40,6 +53,7 @@ export interface Token {
   grammarTag: GrammarTag;
   translation?: string;
   grammarRefId?: string;
+  hint?: string;
 }
 
 export interface GrammarTag {
@@ -81,6 +95,7 @@ export interface GrammarTopic {
 export interface GrammarSection {
   heading: string;
   content: string;
+  image?: string;
 }
 
 export interface TextExample {

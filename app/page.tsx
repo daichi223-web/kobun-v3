@@ -143,6 +143,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 単語帳 */}
+      <section className="w-full max-w-lg space-y-3 mb-10">
+        <Link
+          href="/vocab"
+          className="block w-full text-center px-4 py-3 rounded-lg border border-sumi/20 font-bold hover:bg-sumi/5 transition-colors"
+        >
+          単語帳
+        </Link>
+      </section>
+
       {/* 先生AIリンク */}
       <section className="w-full max-w-lg">
         <a

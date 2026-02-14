@@ -5,6 +5,58 @@
 import type { ReadingProgress, LayerId } from "./types";
 
 const STORAGE_KEY = "kobun-yomi-progress";
+const VOCAB_KEY = "kobun-yomi-vocab";
+
+/* ═══════════════════════════════════════════
+   単語帳
+   ═══════════════════════════════════════════ */
+
+export interface VocabEntry {
+  tokenText: string;
+  baseForm: string;
+  pos: string;
+  hint?: string;
+  textId: string;
+  grammarRefId?: string;
+  viewedAt: string;
+}
+
+export function getVocabEntries(): VocabEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(VOCAB_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function addVocabEntry(entry: VocabEntry): void {
+  const entries = getVocabEntries();
+  const key = `${entry.baseForm}:${entry.pos}`;
+  if (entries.some((e) => `${e.baseForm}:${e.pos}` === key)) return;
+  entries.push(entry);
+  try {
+    localStorage.setItem(VOCAB_KEY, JSON.stringify(entries));
+  } catch {
+    // storage full
+  }
+}
+
+export function removeVocabEntry(baseForm: string, pos: string): void {
+  const entries = getVocabEntries().filter(
+    (e) => !(e.baseForm === baseForm && e.pos === pos)
+  );
+  try {
+    localStorage.setItem(VOCAB_KEY, JSON.stringify(entries));
+  } catch {
+    // storage full
+  }
+}
+
+/* ═══════════════════════════════════════════
+   進捗管理
+   ═══════════════════════════════════════════ */
 
 export function loadAllProgress(): Record<string, ReadingProgress> {
   if (typeof window === "undefined") return {};

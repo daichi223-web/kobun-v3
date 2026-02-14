@@ -80,3 +80,14 @@ const NOTEBOOK_LM_ID = "7c68c649-51f5-4af6-a537-99b7767d051a";
 export function getNotebookLmUrl(): string {
   return `https://notebooklm.google.com/notebook/${NOTEBOOK_LM_ID}`;
 }
+
+/** ポップオーバーからNotebookLMに飛ぶURLを構築する */
+export function buildNotebookLmUrl(params: {
+  token: Token;
+  currentLayer: LayerId;
+}): string {
+  const { token } = params;
+  const tag = token.grammarTag;
+  const query = `${tag.pos} ${tag.baseForm || token.text}`;
+  return `${getNotebookLmUrl()}?query=${encodeURIComponent(query)}`;
+}

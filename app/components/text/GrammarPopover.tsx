@@ -3,13 +3,15 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import type { Token, LayerId, TokenAnalysis } from "@/app/lib/types";
-import { buildGemUrl } from "@/app/lib/gem";
+import { buildGemUrl, buildNotebookLmUrl } from "@/app/lib/gem";
+import { addVocabEntry } from "@/app/lib/progress";
 
 interface GrammarPopoverProps {
   token: Token;
   currentLayer: LayerId;
   analysis: TokenAnalysis | null;
   textTitle: string;
+  textId: string;
   sentenceText: string;
   onClose: () => void;
 }
@@ -19,6 +21,7 @@ export function GrammarPopover({
   currentLayer,
   analysis,
   textTitle,
+  textId,
   sentenceText,
   onClose,
 }: GrammarPopoverProps) {
@@ -50,6 +53,7 @@ export function GrammarPopover({
           tag={tag}
           analysis={analysis}
           textTitle={textTitle}
+          textId={textId}
           sentenceText={sentenceText}
           currentLayer={currentLayer}
           onClose={onClose}
@@ -72,6 +76,7 @@ export function GrammarPopover({
             tag={tag}
             analysis={analysis}
             textTitle={textTitle}
+            textId={textId}
             sentenceText={sentenceText}
             currentLayer={currentLayer}
             onClose={onClose}
@@ -88,6 +93,7 @@ function PopoverContent({
   tag,
   analysis,
   textTitle,
+  textId,
   sentenceText,
   currentLayer,
   onClose,
@@ -97,12 +103,27 @@ function PopoverContent({
   tag: Token["grammarTag"];
   analysis: TokenAnalysis | null;
   textTitle: string;
+  textId: string;
   sentenceText: string;
   currentLayer: LayerId;
   onClose: () => void;
 }) {
   const router = useRouter();
   const gemUrl = buildGemUrl({ textTitle, sentenceText, token, currentLayer });
+  const nlmUrl = buildNotebookLmUrl({ token, currentLayer });
+
+  function handleAddVocab() {
+    addVocabEntry({
+      tokenText: token.text,
+      baseForm: tag.baseForm || token.text,
+      pos: tag.pos,
+      hint: token.hint,
+      textId,
+      grammarRefId: token.grammarRefId,
+      viewedAt: new Date().toISOString(),
+    });
+  }
+
   return (
     <div className="space-y-3">
       <div className="flex items-baseline justify-between">
@@ -145,6 +166,14 @@ function PopoverContent({
         )}
       </div>
 
+      {/* 重要ポイント（hint） */}
+      {!isScaffold && token.hint && (
+        <div className="bg-amber-50 border border-amber-200 rounded-md px-3 py-2">
+          <p className="text-xs font-bold text-amber-700 mb-0.5">重要ポイント</p>
+          <p className="text-sm text-amber-900">{token.hint}</p>
+        </div>
+      )}
+
       {/* 判別の筋道（分析対象のみ） */}
       {!isScaffold && analysis && analysis.reasoning.length > 0 && (
         <div className="border-t border-sumi/10 pt-3 space-y-2">
@@ -159,29 +188,46 @@ function PopoverContent({
         </div>
       )}
 
-      {/* リファレンスリンク + 先生AI */}
-      <div className="border-t border-sumi/10 pt-2 flex items-center justify-between">
+      {/* 単語帳追加ボタン */}
+      <div className="border-t border-sumi/10 pt-2">
+        <button
+          className="text-xs text-scaffold hover:text-sumi transition-colors"
+          onClick={handleAddVocab}
+        >
+          + 単語帳に追加
+        </button>
+      </div>
+
+      {/* リンク3つ横並び */}
+      <div className="flex items-center justify-between text-sm">
         {token.grammarRefId ? (
           <button
-            className="text-sm text-layer-1 hover:underline"
+            className="text-layer-1 hover:underline"
             onClick={() => {
-              const href = `/reference/${token.grammarRefId}`;
               onClose();
-              router.push(href);
+              router.push(`/reference/${token.grammarRefId}`);
             }}
           >
-            詳しく見る →
+            解説 →
           </button>
         ) : (
           <span />
         )}
         <button
-          className="text-sm text-shu hover:text-shu/80 transition-colors"
+          className="text-blue-600 hover:underline"
+          onClick={() => {
+            window.open(nlmUrl, "_blank", "noopener,noreferrer");
+          }}
+        >
+          NLM →
+        </button>
+        <button
+          className="text-shu hover:text-shu/80 transition-colors"
           onClick={() => {
             window.open(gemUrl, "_blank", "noopener,noreferrer");
           }}
         >
-          先生AIに聞く →
+          先生AI →
         </button>
       </div>
     </div>

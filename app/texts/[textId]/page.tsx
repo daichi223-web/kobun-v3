@@ -9,6 +9,7 @@ import { TokenizedText } from "@/app/components/text/TokenizedText";
 import { LayerSelector } from "@/app/components/text/LayerSelector";
 import { TranslationPanel } from "@/app/components/text/TranslationPanel";
 import { SelectionToolbar } from "@/app/components/text/SelectionToolbar";
+import { LearningPointsPanel } from "@/app/components/text/LearningPointsPanel";
 import Link from "next/link";
 
 function TextReaderInner() {
@@ -90,6 +91,14 @@ function TextReaderInner() {
 
       {/* テキスト本文 */}
       <main className="flex-1 px-4 py-6 space-y-6">
+        {/* 学習ポイント */}
+        {text.learningPoints && (
+          <LearningPointsPanel
+            learningPoints={text.learningPoints}
+            currentLayer={currentLayer}
+          />
+        )}
+
         {text.sentences.map((sentence) => (
           <div key={sentence.id} className="space-y-2">
             <TokenizedText
@@ -97,6 +106,7 @@ function TextReaderInner() {
               currentLayer={currentLayer}
               analysis={analysis}
               textTitle={text.title}
+              textId={textId}
               onTokenView={handleTokenView}
               readingAnnotation={
                 readingGuide?.annotations.find((a) => a.sentenceId === sentence.id) ?? null
