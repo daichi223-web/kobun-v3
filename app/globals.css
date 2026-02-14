@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f0e8;
+  --foreground: #2d2d2d;
+  --sumi: #2d2d2d;
+  --shu: #cc3333;
+  --kin: #c9a84c;
+  --sakura: #fedfe1;
+  --washi: #f5f0e8;
+
+  /* v3 追加: layer色（鮮やか・視認性重視） */
+  --layer-0: #d97706;   /* 読解: 琥珀 */
+  --layer-1: #2563eb;   /* 用言: 青 */
+  --layer-2: #dc2626;   /* 助動詞: 赤 */
+  --layer-3: #16a34a;   /* 助詞: 緑 */
+  --layer-4: #9333ea;   /* 敬語: 紫 */
+  --scaffold: #9ca3af;  /* 足場: 灰 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sumi: var(--sumi);
+  --color-shu: var(--shu);
+  --color-kin: var(--kin);
+  --color-sakura: var(--sakura);
+  --color-washi: var(--washi);
+  --color-layer-0: var(--layer-0);
+  --color-layer-1: var(--layer-1);
+  --color-layer-2: var(--layer-2);
+  --color-layer-3: var(--layer-3);
+  --color-layer-4: var(--layer-4);
+  --color-scaffold: var(--scaffold);
+  --font-serif: var(--font-noto-serif-jp), "Yu Mincho", "Hiragino Mincho Pro", serif;
+}
+
+body {
+  background: var(--washi);
+  color: var(--sumi);
+  font-family: var(--font-serif);
+  min-height: 100dvh;
+}
+
+/* トークンの下線スタイル（layer色） */
+.token-active {
+  cursor: pointer;
+  border-bottom: 2px solid currentColor;
+  transition: background-color 0.15s;
+}
+
+.token-active:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.token-scaffold {
+  color: var(--scaffold);
+  cursor: pointer;
+  border-bottom: 1px dashed var(--scaffold);
+}
+
+
+/* ポップオーバーアニメーション */
+@keyframes popover-in {
+  0% { opacity: 0; transform: translateY(4px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-popover-in {
+  animation: popover-in 0.15s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.25s ease-out;
+}

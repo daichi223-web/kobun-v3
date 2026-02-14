@@ -1,0 +1,3519 @@
+{
+  "id": "ebutsu-shi-ryoshu",
+  "title": "絵仏師良秀",
+  "source": "宇治拾遺物語",
+  "genre": "説話",
+  "difficulty": 2,
+  "layers": [
+    {
+      "id": 0,
+      "label": "読解",
+      "description": "主語・場面・文脈を把握しながら通読する"
+    },
+    {
+      "id": 1,
+      "label": "用言の活用",
+      "description": "動詞・形容詞・形容動詞の活用を分析する"
+    },
+    {
+      "id": 2,
+      "label": "助動詞",
+      "description": "助動詞の意味・接続・活用を分析する",
+      "prerequisite": 1
+    },
+    {
+      "id": 3,
+      "label": "助詞",
+      "description": "助詞の種類と機能を分析する",
+      "prerequisite": 2
+    },
+    {
+      "id": 4,
+      "label": "敬語",
+      "description": "敬語の種類と対象を分析する",
+      "prerequisite": 3
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "originalText": "これも今は昔、絵仏師良秀といふありけり。",
+      "modernTranslation": "これも今となっては昔のことだが、絵仏師良秀という者がいた。",
+      "tokens": [
+        {
+          "id": "s1-t1",
+          "text": "これ",
+          "start": 0,
+          "end": 2,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "代名詞"
+          }
+        },
+        {
+          "id": "s1-t2",
+          "text": "も",
+          "start": 2,
+          "end": 3,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "添加"
+          },
+          "translation": "も",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s1-t3",
+          "text": "今",
+          "start": 3,
+          "end": 4,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "いま"
+        },
+        {
+          "id": "s1-t4",
+          "text": "は",
+          "start": 4,
+          "end": 5,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主題"
+          },
+          "translation": "は",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s1-t5",
+          "text": "昔",
+          "start": 5,
+          "end": 6,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "むかし"
+        },
+        {
+          "id": "s1-t6",
+          "text": "、",
+          "start": 6,
+          "end": 7,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s1-t7",
+          "text": "絵仏師良秀",
+          "start": 7,
+          "end": 12,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "ゑぶつしりやうしう",
+          "translation": "絵仏師の良秀"
+        },
+        {
+          "id": "s1-t8",
+          "text": "と",
+          "start": 12,
+          "end": 13,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s1-t9",
+          "text": "いふ",
+          "start": 13,
+          "end": 15,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連体形",
+            "baseForm": "いふ"
+          },
+          "translation": "いう",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s1-t10",
+          "text": "あり",
+          "start": 15,
+          "end": 17,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ラ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "あり"
+          },
+          "translation": "いた",
+          "grammarRefId": "doushi-rahen"
+        },
+        {
+          "id": "s1-t11",
+          "text": "けり",
+          "start": 17,
+          "end": 19,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "終止形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た（という）",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s1-t12",
+          "text": "。",
+          "start": 19,
+          "end": 20,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "originalText": "家の隣より火出で来て、風おしおほひてせめければ、逃げ出でて、大路へ出でにけり。",
+      "modernTranslation": "家の隣から火が出てきて、風が覆いかぶさるように吹いて火が攻めてきたので、逃げ出して、大通りへ出てしまった。",
+      "tokens": [
+        {
+          "id": "s2-t1",
+          "text": "家",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "いへ"
+        },
+        {
+          "id": "s2-t2",
+          "text": "の",
+          "start": 1,
+          "end": 2,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "連体修飾"
+          },
+          "translation": "の",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s2-t3",
+          "text": "隣",
+          "start": 2,
+          "end": 3,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "となり"
+        },
+        {
+          "id": "s2-t4",
+          "text": "より",
+          "start": 3,
+          "end": 5,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "起点"
+          },
+          "translation": "〜から",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s2-t5",
+          "text": "火",
+          "start": 5,
+          "end": 6,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "ひ"
+        },
+        {
+          "id": "s2-t6",
+          "text": "出で来",
+          "start": 6,
+          "end": 9,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "出で来"
+          },
+          "furigana": "いでき",
+          "translation": "出てくる",
+          "grammarRefId": "doushi-kahen"
+        },
+        {
+          "id": "s2-t7",
+          "text": "て",
+          "start": 9,
+          "end": 10,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s2-t8",
+          "text": "、",
+          "start": 10,
+          "end": 11,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s2-t9",
+          "text": "風",
+          "start": 11,
+          "end": 12,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "かぜ"
+        },
+        {
+          "id": "s2-t10",
+          "text": "おしおほひ",
+          "start": 12,
+          "end": 17,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "おしおほふ"
+          },
+          "translation": "覆いかぶさる",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s2-t11",
+          "text": "て",
+          "start": 17,
+          "end": 18,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s2-t12",
+          "text": "せめ",
+          "start": 18,
+          "end": 20,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "マ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "せむ"
+          },
+          "translation": "攻める・迫る",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s2-t13",
+          "text": "けれ",
+          "start": 20,
+          "end": 22,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去",
+            "conjugationForm": "已然形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s2-t14",
+          "text": "ば",
+          "start": 22,
+          "end": 23,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "順接確定"
+          },
+          "translation": "〜ので",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s2-t15",
+          "text": "、",
+          "start": 23,
+          "end": 24,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s2-t16",
+          "text": "逃げ出で",
+          "start": 24,
+          "end": 28,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ダ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "逃げ出づ"
+          },
+          "translation": "逃げ出す",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s2-t17",
+          "text": "て",
+          "start": 28,
+          "end": 29,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s2-t18",
+          "text": "、",
+          "start": 29,
+          "end": 30,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s2-t19",
+          "text": "大路",
+          "start": 30,
+          "end": 32,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "おほぢ",
+          "translation": "大通り"
+        },
+        {
+          "id": "s2-t20",
+          "text": "へ",
+          "start": 32,
+          "end": 33,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "方向"
+          },
+          "translation": "へ",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s2-t21",
+          "text": "出で",
+          "start": 33,
+          "end": 35,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ダ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "出づ"
+          },
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s2-t22",
+          "text": "に",
+          "start": 35,
+          "end": 36,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "完了",
+            "conjugationForm": "連用形",
+            "baseForm": "ぬ"
+          },
+          "translation": "〜てしまった",
+          "grammarRefId": "jodoshi-nu"
+        },
+        {
+          "id": "s2-t23",
+          "text": "けり",
+          "start": 36,
+          "end": 38,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "終止形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s2-t24",
+          "text": "。",
+          "start": 38,
+          "end": 39,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "originalText": "人の書かする仏もおはしけり。",
+      "modernTranslation": "人が（良秀に）描かせている仏（の絵）もいらっしゃった。",
+      "tokens": [
+        {
+          "id": "s3-t1",
+          "text": "人",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s3-t2",
+          "text": "の",
+          "start": 1,
+          "end": 2,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主格"
+          },
+          "translation": "が",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s3-t3",
+          "text": "書か",
+          "start": 2,
+          "end": 4,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行四段活用",
+            "conjugationForm": "未然形",
+            "baseForm": "書く"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s3-t4",
+          "text": "する",
+          "start": 4,
+          "end": 6,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "使役",
+            "conjugationForm": "連体形",
+            "baseForm": "す"
+          },
+          "translation": "〜させる",
+          "grammarRefId": "jodoshi-su"
+        },
+        {
+          "id": "s3-t5",
+          "text": "仏",
+          "start": 6,
+          "end": 7,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "ほとけ",
+          "translation": "仏（の絵）"
+        },
+        {
+          "id": "s3-t6",
+          "text": "も",
+          "start": 7,
+          "end": 8,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "添加"
+          },
+          "translation": "も",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s3-t7",
+          "text": "おはし",
+          "start": 8,
+          "end": 11,
+          "layer": 4,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "サ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "おはす",
+            "meaning": "尊敬語"
+          },
+          "translation": "いらっしゃる",
+          "grammarRefId": "keigo-sonkei"
+        },
+        {
+          "id": "s3-t8",
+          "text": "けり",
+          "start": 11,
+          "end": 13,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "終止形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s3-t9",
+          "text": "。",
+          "start": 13,
+          "end": 14,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "originalText": "また衣着ぬ妻子なども、さながら内にありけり。",
+      "modernTranslation": "また衣服を着ていない妻子なども、そのまま家の中にいた。",
+      "tokens": [
+        {
+          "id": "s4-t1",
+          "text": "また",
+          "start": 0,
+          "end": 2,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "また"
+        },
+        {
+          "id": "s4-t2",
+          "text": "衣",
+          "start": 2,
+          "end": 3,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "きぬ",
+          "translation": "衣服"
+        },
+        {
+          "id": "s4-t3",
+          "text": "着",
+          "start": 3,
+          "end": 4,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行上一段活用",
+            "conjugationForm": "未然形",
+            "baseForm": "着る"
+          },
+          "grammarRefId": "doushi-kami-ichidan"
+        },
+        {
+          "id": "s4-t4",
+          "text": "ぬ",
+          "start": 4,
+          "end": 5,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "打消",
+            "conjugationForm": "連体形",
+            "baseForm": "ず"
+          },
+          "translation": "〜ない",
+          "grammarRefId": "jodoshi-zu"
+        },
+        {
+          "id": "s4-t5",
+          "text": "妻子",
+          "start": 5,
+          "end": 7,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "めこ",
+          "translation": "妻と子"
+        },
+        {
+          "id": "s4-t6",
+          "text": "など",
+          "start": 7,
+          "end": 9,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "例示"
+          },
+          "translation": "など",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s4-t7",
+          "text": "も",
+          "start": 9,
+          "end": 10,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "添加"
+          },
+          "translation": "も",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s4-t8",
+          "text": "、",
+          "start": 10,
+          "end": 11,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s4-t9",
+          "text": "さながら",
+          "start": 11,
+          "end": 15,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "そのまま"
+        },
+        {
+          "id": "s4-t10",
+          "text": "内",
+          "start": 15,
+          "end": 16,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "うち",
+          "translation": "家の中"
+        },
+        {
+          "id": "s4-t11",
+          "text": "に",
+          "start": 16,
+          "end": 17,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "場所"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s4-t12",
+          "text": "あり",
+          "start": 17,
+          "end": 19,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ラ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "あり"
+          },
+          "translation": "いる",
+          "grammarRefId": "doushi-rahen"
+        },
+        {
+          "id": "s4-t13",
+          "text": "けり",
+          "start": 19,
+          "end": 21,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "終止形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s4-t14",
+          "text": "。",
+          "start": 21,
+          "end": 22,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "originalText": "それも知らず、ただ逃げ出でたるをことにして、向かひのつらに立てり。",
+      "modernTranslation": "それも構わず、ただ逃げ出したことを得意にして、向かい側のそばに立っていた。",
+      "tokens": [
+        {
+          "id": "s5-t1",
+          "text": "それ",
+          "start": 0,
+          "end": 2,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "代名詞"
+          }
+        },
+        {
+          "id": "s5-t2",
+          "text": "も",
+          "start": 2,
+          "end": 3,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "添加"
+          },
+          "translation": "も",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s5-t3",
+          "text": "知ら",
+          "start": 3,
+          "end": 5,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ラ行四段活用",
+            "conjugationForm": "未然形",
+            "baseForm": "知る"
+          },
+          "translation": "構う",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s5-t4",
+          "text": "ず",
+          "start": 5,
+          "end": 6,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "打消",
+            "conjugationForm": "終止形",
+            "baseForm": "ず"
+          },
+          "translation": "〜ない",
+          "grammarRefId": "jodoshi-zu"
+        },
+        {
+          "id": "s5-t5",
+          "text": "、",
+          "start": 6,
+          "end": 7,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s5-t6",
+          "text": "ただ",
+          "start": 7,
+          "end": 9,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "ただ"
+        },
+        {
+          "id": "s5-t7",
+          "text": "逃げ出で",
+          "start": 9,
+          "end": 13,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ダ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "逃げ出づ"
+          },
+          "translation": "逃げ出す",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s5-t8",
+          "text": "たる",
+          "start": 13,
+          "end": 15,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "完了",
+            "conjugationForm": "連体形",
+            "baseForm": "たり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-tari"
+        },
+        {
+          "id": "s5-t9",
+          "text": "を",
+          "start": 15,
+          "end": 16,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "対象"
+          },
+          "translation": "を",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s5-t10",
+          "text": "ことにして",
+          "start": 16,
+          "end": 21,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "連語"
+          },
+          "translation": "得意にして・よいことにして"
+        },
+        {
+          "id": "s5-t11",
+          "text": "、",
+          "start": 21,
+          "end": 22,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s5-t12",
+          "text": "向かひ",
+          "start": 22,
+          "end": 25,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "向かい側"
+        },
+        {
+          "id": "s5-t13",
+          "text": "の",
+          "start": 25,
+          "end": 26,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "連体修飾"
+          },
+          "translation": "の",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s5-t14",
+          "text": "つら",
+          "start": 26,
+          "end": 28,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "あたり・そば"
+        },
+        {
+          "id": "s5-t15",
+          "text": "に",
+          "start": 28,
+          "end": 29,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "場所"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s5-t16",
+          "text": "立て",
+          "start": 29,
+          "end": 31,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "タ行四段活用",
+            "conjugationForm": "已然形",
+            "baseForm": "立つ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s5-t17",
+          "text": "り",
+          "start": 31,
+          "end": 32,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "存続",
+            "conjugationForm": "終止形",
+            "baseForm": "り"
+          },
+          "translation": "〜ている",
+          "grammarRefId": "jodoshi-ri"
+        },
+        {
+          "id": "s5-t18",
+          "text": "。",
+          "start": 32,
+          "end": 33,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "originalText": "見れば、すでにわが家に移りて、けぶり、炎くゆりけるまで、おほかた向かひに立ちて、眺めければ、",
+      "modernTranslation": "見ると、すでに自分の家に（火が）燃え移って、煙や炎が立ちのぼっているのに関わらず、だいたい向かい側に立って、眺めていたので、",
+      "tokens": [
+        {
+          "id": "s6-t1",
+          "text": "見れ",
+          "start": 0,
+          "end": 2,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "マ行上一段活用",
+            "conjugationForm": "已然形",
+            "baseForm": "見る"
+          },
+          "grammarRefId": "doushi-kami-ichidan"
+        },
+        {
+          "id": "s6-t2",
+          "text": "ば",
+          "start": 2,
+          "end": 3,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "順接確定"
+          },
+          "translation": "〜と",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s6-t3",
+          "text": "、",
+          "start": 3,
+          "end": 4,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s6-t4",
+          "text": "すでに",
+          "start": 4,
+          "end": 7,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "すでに"
+        },
+        {
+          "id": "s6-t5",
+          "text": "わが",
+          "start": 7,
+          "end": 9,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "連体詞"
+          },
+          "translation": "自分の"
+        },
+        {
+          "id": "s6-t6",
+          "text": "家",
+          "start": 9,
+          "end": 10,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "いへ"
+        },
+        {
+          "id": "s6-t7",
+          "text": "に",
+          "start": 10,
+          "end": 11,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "場所"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s6-t8",
+          "text": "移り",
+          "start": 11,
+          "end": 13,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ラ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "移る"
+          },
+          "furigana": "うつり",
+          "translation": "燃え移る",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s6-t9",
+          "text": "て",
+          "start": 13,
+          "end": 14,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s6-t10",
+          "text": "、",
+          "start": 14,
+          "end": 15,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s6-t11",
+          "text": "けぶり",
+          "start": 15,
+          "end": 18,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "煙"
+        },
+        {
+          "id": "s6-t12",
+          "text": "、",
+          "start": 18,
+          "end": 19,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s6-t13",
+          "text": "炎",
+          "start": 19,
+          "end": 20,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "ほのほ"
+        },
+        {
+          "id": "s6-t14",
+          "text": "くゆり",
+          "start": 20,
+          "end": 23,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ラ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "くゆる"
+          },
+          "translation": "立ちのぼる・くすぶる",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s6-t15",
+          "text": "ける",
+          "start": 23,
+          "end": 25,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "連体形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s6-t16",
+          "text": "まで",
+          "start": 25,
+          "end": 27,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "程度"
+          },
+          "translation": "〜まで",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s6-t17",
+          "text": "、",
+          "start": 27,
+          "end": 28,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s6-t18",
+          "text": "おほかた",
+          "start": 28,
+          "end": 32,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "だいたい・おおよそ"
+        },
+        {
+          "id": "s6-t19",
+          "text": "向かひ",
+          "start": 32,
+          "end": 35,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "向かい側"
+        },
+        {
+          "id": "s6-t20",
+          "text": "に",
+          "start": 35,
+          "end": 36,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "場所"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s6-t21",
+          "text": "立ち",
+          "start": 36,
+          "end": 38,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "タ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "立つ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s6-t22",
+          "text": "て",
+          "start": 38,
+          "end": 39,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s6-t23",
+          "text": "、",
+          "start": 39,
+          "end": 40,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s6-t24",
+          "text": "眺め",
+          "start": 40,
+          "end": 42,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "マ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "眺む"
+          },
+          "translation": "ぼんやり眺める",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s6-t25",
+          "text": "けれ",
+          "start": 42,
+          "end": 44,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去",
+            "conjugationForm": "已然形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s6-t26",
+          "text": "ば",
+          "start": 44,
+          "end": 45,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "順接確定"
+          },
+          "translation": "〜ので",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s6-t27",
+          "text": "、",
+          "start": 45,
+          "end": 46,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "originalText": "「あさましきこと。」とて、人ども来とぶらひけれど、騒がず。",
+      "modernTranslation": "「驚きあきれたことだ。」と言って、人々が見舞いに来たけれど、（良秀は）騒がない。",
+      "tokens": [
+        {
+          "id": "s7-t1",
+          "text": "「",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s7-t2",
+          "text": "あさましき",
+          "start": 1,
+          "end": 6,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "形容詞",
+            "conjugationType": "シク活用",
+            "conjugationForm": "連体形",
+            "baseForm": "あさまし"
+          },
+          "translation": "驚きあきれた",
+          "grammarRefId": "keiyoshi-shiku"
+        },
+        {
+          "id": "s7-t3",
+          "text": "こと",
+          "start": 6,
+          "end": 8,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s7-t4",
+          "text": "。」",
+          "start": 8,
+          "end": 10,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s7-t5",
+          "text": "とて",
+          "start": 10,
+          "end": 12,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用・理由"
+          },
+          "translation": "と言って",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s7-t6",
+          "text": "、",
+          "start": 12,
+          "end": 13,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s7-t7",
+          "text": "人",
+          "start": 13,
+          "end": 14,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s7-t8",
+          "text": "ども",
+          "start": 14,
+          "end": 16,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "接尾語"
+          },
+          "translation": "（複数）"
+        },
+        {
+          "id": "s7-t9",
+          "text": "来",
+          "start": 16,
+          "end": 17,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "来"
+          },
+          "furigana": "き",
+          "grammarRefId": "doushi-kahen"
+        },
+        {
+          "id": "s7-t10",
+          "text": "とぶらひ",
+          "start": 17,
+          "end": 21,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "とぶらふ"
+          },
+          "translation": "見舞う",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s7-t11",
+          "text": "けれ",
+          "start": 21,
+          "end": 23,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去",
+            "conjugationForm": "已然形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s7-t12",
+          "text": "ど",
+          "start": 23,
+          "end": 24,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "逆接"
+          },
+          "translation": "けれど",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s7-t13",
+          "text": "、",
+          "start": 24,
+          "end": 25,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s7-t14",
+          "text": "騒が",
+          "start": 25,
+          "end": 27,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ガ行四段活用",
+            "conjugationForm": "未然形",
+            "baseForm": "騒ぐ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s7-t15",
+          "text": "ず",
+          "start": 27,
+          "end": 28,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "打消",
+            "conjugationForm": "終止形",
+            "baseForm": "ず"
+          },
+          "translation": "〜ない",
+          "grammarRefId": "jodoshi-zu"
+        },
+        {
+          "id": "s7-t16",
+          "text": "。",
+          "start": 28,
+          "end": 29,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "originalText": "「いかに。」と人の言ひければ、向かひに立ちて、家の焼くるを見て、うちうなづきて、時々笑ひけり。",
+      "modernTranslation": "「どうしたのですか。」と人が言ったところ、向かい側に立って、家が焼けるのを見て、うなずいて、時々笑っていた。",
+      "tokens": [
+        {
+          "id": "s8-t1",
+          "text": "「",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s8-t2",
+          "text": "いかに",
+          "start": 1,
+          "end": 4,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "どうしたのか"
+        },
+        {
+          "id": "s8-t3",
+          "text": "。」",
+          "start": 4,
+          "end": 6,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s8-t4",
+          "text": "と",
+          "start": 6,
+          "end": 7,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s8-t5",
+          "text": "人",
+          "start": 7,
+          "end": 8,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s8-t6",
+          "text": "の",
+          "start": 8,
+          "end": 9,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主格"
+          },
+          "translation": "が",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s8-t7",
+          "text": "言ひ",
+          "start": 9,
+          "end": 11,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "言ふ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s8-t8",
+          "text": "けれ",
+          "start": 11,
+          "end": 13,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去",
+            "conjugationForm": "已然形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s8-t9",
+          "text": "ば",
+          "start": 13,
+          "end": 14,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "順接確定"
+          },
+          "translation": "〜ところ",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s8-t10",
+          "text": "、",
+          "start": 14,
+          "end": 15,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s8-t11",
+          "text": "向かひ",
+          "start": 15,
+          "end": 18,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "向かい側"
+        },
+        {
+          "id": "s8-t12",
+          "text": "に",
+          "start": 18,
+          "end": 19,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "場所"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s8-t13",
+          "text": "立ち",
+          "start": 19,
+          "end": 21,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "タ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "立つ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s8-t14",
+          "text": "て",
+          "start": 21,
+          "end": 22,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s8-t15",
+          "text": "、",
+          "start": 22,
+          "end": 23,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s8-t16",
+          "text": "家",
+          "start": 23,
+          "end": 24,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "いへ"
+        },
+        {
+          "id": "s8-t17",
+          "text": "の",
+          "start": 24,
+          "end": 25,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主格"
+          },
+          "translation": "が",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s8-t18",
+          "text": "焼くる",
+          "start": 25,
+          "end": 28,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行下二段活用",
+            "conjugationForm": "連体形",
+            "baseForm": "焼く"
+          },
+          "furigana": "やくる",
+          "translation": "焼ける",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s8-t19",
+          "text": "を",
+          "start": 28,
+          "end": 29,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "対象"
+          },
+          "translation": "を",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s8-t20",
+          "text": "見",
+          "start": 29,
+          "end": 30,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "マ行上一段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "見る"
+          },
+          "grammarRefId": "doushi-kami-ichidan"
+        },
+        {
+          "id": "s8-t21",
+          "text": "て",
+          "start": 30,
+          "end": 31,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s8-t22",
+          "text": "、",
+          "start": 31,
+          "end": 32,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s8-t23",
+          "text": "うちうなづき",
+          "start": 32,
+          "end": 38,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "うちうなづく"
+          },
+          "translation": "うなずく",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s8-t24",
+          "text": "て",
+          "start": 38,
+          "end": 39,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s8-t25",
+          "text": "、",
+          "start": 39,
+          "end": 40,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s8-t26",
+          "text": "時々",
+          "start": 40,
+          "end": 42,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "furigana": "ときどき"
+        },
+        {
+          "id": "s8-t27",
+          "text": "笑ひ",
+          "start": 42,
+          "end": 44,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "笑ふ"
+          },
+          "furigana": "わらひ",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s8-t28",
+          "text": "けり",
+          "start": 44,
+          "end": 46,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "終止形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s8-t29",
+          "text": "。",
+          "start": 46,
+          "end": 47,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "originalText": "「あはれ、しつるせうとくかな。年ごろは、わろく書きけるものかな。」と言ふ時に、",
+      "modernTranslation": "「ああ、してしまった得だなあ。長年の間、下手に描いてきたものだなあ。」と言う時に、",
+      "tokens": [
+        {
+          "id": "s9-t1",
+          "text": "「",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s9-t2",
+          "text": "あはれ",
+          "start": 1,
+          "end": 4,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "感動詞"
+          },
+          "translation": "ああ"
+        },
+        {
+          "id": "s9-t3",
+          "text": "、",
+          "start": 4,
+          "end": 5,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s9-t4",
+          "text": "し",
+          "start": 5,
+          "end": 6,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "サ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "す"
+          },
+          "translation": "する",
+          "grammarRefId": "doushi-sahen"
+        },
+        {
+          "id": "s9-t5",
+          "text": "つる",
+          "start": 6,
+          "end": 8,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "完了",
+            "conjugationForm": "連体形",
+            "baseForm": "つ"
+          },
+          "translation": "〜てしまった",
+          "grammarRefId": "jodoshi-tsu"
+        },
+        {
+          "id": "s9-t6",
+          "text": "せうとく",
+          "start": 8,
+          "end": 12,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "得・もうけもの"
+        },
+        {
+          "id": "s9-t7",
+          "text": "かな",
+          "start": 12,
+          "end": 14,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "詠嘆（終助詞）"
+          },
+          "translation": "〜だなあ",
+          "grammarRefId": "joshi-shujoshi"
+        },
+        {
+          "id": "s9-t8",
+          "text": "。",
+          "start": 14,
+          "end": 15,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s9-t9",
+          "text": "年ごろ",
+          "start": 15,
+          "end": 18,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "長年"
+        },
+        {
+          "id": "s9-t10",
+          "text": "は",
+          "start": 18,
+          "end": 19,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主題"
+          },
+          "translation": "は",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s9-t11",
+          "text": "、",
+          "start": 19,
+          "end": 20,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s9-t12",
+          "text": "わろく",
+          "start": 20,
+          "end": 23,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "形容詞",
+            "conjugationType": "ク活用",
+            "conjugationForm": "連用形",
+            "baseForm": "わろし"
+          },
+          "translation": "下手に・まずく",
+          "grammarRefId": "keiyoshi-ku"
+        },
+        {
+          "id": "s9-t13",
+          "text": "書き",
+          "start": 23,
+          "end": 25,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "書く"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s9-t14",
+          "text": "ける",
+          "start": 25,
+          "end": 27,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（詠嘆）",
+            "conjugationForm": "連体形",
+            "baseForm": "けり"
+          },
+          "translation": "〜ていた",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s9-t15",
+          "text": "もの",
+          "start": 27,
+          "end": 29,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "ものだ"
+        },
+        {
+          "id": "s9-t16",
+          "text": "かな",
+          "start": 29,
+          "end": 31,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "詠嘆（終助詞）"
+          },
+          "translation": "〜だなあ",
+          "grammarRefId": "joshi-shujoshi"
+        },
+        {
+          "id": "s9-t17",
+          "text": "。」",
+          "start": 31,
+          "end": 33,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s9-t18",
+          "text": "と",
+          "start": 33,
+          "end": 34,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s9-t19",
+          "text": "言ふ",
+          "start": 34,
+          "end": 36,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連体形",
+            "baseForm": "言ふ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s9-t20",
+          "text": "時",
+          "start": 36,
+          "end": 37,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s9-t21",
+          "text": "に",
+          "start": 37,
+          "end": 38,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "時"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s9-t22",
+          "text": "、",
+          "start": 38,
+          "end": 39,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "originalText": "とぶらひに来たる者ども、「こはいかに、かくてはおはしますべきか。あさましきことかな。もの狂ひか。」と言ひければ、",
+      "modernTranslation": "見舞いに来ていた人々が、「これはどうしたことか、こうしていらっしゃってよいのか。驚きあきれたことだなあ。気が狂ったのか。」と言ったので、",
+      "tokens": [
+        {
+          "id": "s10-t1",
+          "text": "とぶらひ",
+          "start": 0,
+          "end": 4,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "とぶらふ"
+          },
+          "translation": "見舞う",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s10-t2",
+          "text": "に",
+          "start": 4,
+          "end": 5,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "目的"
+          },
+          "translation": "に（〜しに）",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s10-t3",
+          "text": "来",
+          "start": 5,
+          "end": 6,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行変格活用",
+            "conjugationForm": "連用形",
+            "baseForm": "来"
+          },
+          "furigana": "き",
+          "grammarRefId": "doushi-kahen"
+        },
+        {
+          "id": "s10-t4",
+          "text": "たる",
+          "start": 6,
+          "end": 8,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "存続",
+            "conjugationForm": "連体形",
+            "baseForm": "たり"
+          },
+          "translation": "〜ている",
+          "grammarRefId": "jodoshi-tari"
+        },
+        {
+          "id": "s10-t5",
+          "text": "者",
+          "start": 8,
+          "end": 9,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "もの"
+        },
+        {
+          "id": "s10-t6",
+          "text": "ども",
+          "start": 9,
+          "end": 11,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "接尾語"
+          },
+          "translation": "（複数）"
+        },
+        {
+          "id": "s10-t7",
+          "text": "、",
+          "start": 11,
+          "end": 12,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s10-t8",
+          "text": "「",
+          "start": 12,
+          "end": 13,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s10-t9",
+          "text": "こ",
+          "start": 13,
+          "end": 14,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "代名詞"
+          },
+          "translation": "これ"
+        },
+        {
+          "id": "s10-t10",
+          "text": "は",
+          "start": 14,
+          "end": 15,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主題"
+          },
+          "translation": "は",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s10-t11",
+          "text": "いかに",
+          "start": 15,
+          "end": 18,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "どうしたことか"
+        },
+        {
+          "id": "s10-t12",
+          "text": "、",
+          "start": 18,
+          "end": 19,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s10-t13",
+          "text": "かくて",
+          "start": 19,
+          "end": 22,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "こうして"
+        },
+        {
+          "id": "s10-t14",
+          "text": "は",
+          "start": 22,
+          "end": 23,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主題"
+          },
+          "translation": "は",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s10-t15",
+          "text": "おはします",
+          "start": 23,
+          "end": 28,
+          "layer": 4,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "サ行四段活用",
+            "conjugationForm": "終止形",
+            "baseForm": "おはします",
+            "meaning": "尊敬語"
+          },
+          "translation": "いらっしゃる",
+          "grammarRefId": "keigo-sonkei"
+        },
+        {
+          "id": "s10-t16",
+          "text": "べき",
+          "start": 28,
+          "end": 30,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "当然",
+            "conjugationForm": "連体形",
+            "baseForm": "べし"
+          },
+          "translation": "〜してよい",
+          "grammarRefId": "jodoshi-beshi"
+        },
+        {
+          "id": "s10-t17",
+          "text": "か",
+          "start": 30,
+          "end": 31,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "疑問（反語）"
+          },
+          "translation": "か（〜してよいのか）",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s10-t18",
+          "text": "。",
+          "start": 31,
+          "end": 32,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s10-t19",
+          "text": "あさましき",
+          "start": 32,
+          "end": 37,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "形容詞",
+            "conjugationType": "シク活用",
+            "conjugationForm": "連体形",
+            "baseForm": "あさまし"
+          },
+          "translation": "驚きあきれた",
+          "grammarRefId": "keiyoshi-shiku"
+        },
+        {
+          "id": "s10-t20",
+          "text": "こと",
+          "start": 37,
+          "end": 39,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s10-t21",
+          "text": "かな",
+          "start": 39,
+          "end": 41,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "詠嘆（終助詞）"
+          },
+          "translation": "〜だなあ",
+          "grammarRefId": "joshi-shujoshi"
+        },
+        {
+          "id": "s10-t22",
+          "text": "。",
+          "start": 41,
+          "end": 42,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s10-t23",
+          "text": "もの狂ひ",
+          "start": 42,
+          "end": 46,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "気違い・狂人"
+        },
+        {
+          "id": "s10-t24",
+          "text": "か",
+          "start": 46,
+          "end": 47,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "疑問"
+          },
+          "translation": "か",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s10-t25",
+          "text": "。」",
+          "start": 47,
+          "end": 49,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s10-t26",
+          "text": "と",
+          "start": 49,
+          "end": 50,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s10-t27",
+          "text": "言ひ",
+          "start": 50,
+          "end": 52,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "言ふ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s10-t28",
+          "text": "けれ",
+          "start": 52,
+          "end": 54,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去",
+            "conjugationForm": "已然形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s10-t29",
+          "text": "ば",
+          "start": 54,
+          "end": 55,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "順接確定"
+          },
+          "translation": "〜ので",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s10-t30",
+          "text": "、",
+          "start": 55,
+          "end": 56,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "originalText": "「なんでふもの狂ひぞ。これこそ、年ごろ、不動尊の火炎を、あしく書きけるなれ。",
+      "modernTranslation": "「何が気違いか。これでこそ、長年、不動明王の火炎を、下手に描いていたのだ。",
+      "tokens": [
+        {
+          "id": "s11-t1",
+          "text": "「",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s11-t2",
+          "text": "なんでふ",
+          "start": 1,
+          "end": 5,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "何という・どうして"
+        },
+        {
+          "id": "s11-t3",
+          "text": "もの狂ひ",
+          "start": 5,
+          "end": 9,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "気違い"
+        },
+        {
+          "id": "s11-t4",
+          "text": "ぞ",
+          "start": 9,
+          "end": 10,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "強調（係助詞）"
+          },
+          "translation": "（強調）",
+          "grammarRefId": "kakari-musubi"
+        },
+        {
+          "id": "s11-t5",
+          "text": "。",
+          "start": 10,
+          "end": 11,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s11-t6",
+          "text": "これ",
+          "start": 11,
+          "end": 13,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "代名詞"
+          }
+        },
+        {
+          "id": "s11-t7",
+          "text": "こそ",
+          "start": 13,
+          "end": 15,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "強調（係助詞）"
+          },
+          "translation": "こそ（〜だからこそ）",
+          "grammarRefId": "kakari-musubi"
+        },
+        {
+          "id": "s11-t8",
+          "text": "、",
+          "start": 15,
+          "end": 16,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s11-t9",
+          "text": "年ごろ",
+          "start": 16,
+          "end": 19,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "長年"
+        },
+        {
+          "id": "s11-t10",
+          "text": "、",
+          "start": 19,
+          "end": 20,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s11-t11",
+          "text": "不動尊",
+          "start": 20,
+          "end": 23,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "ふどうそん",
+          "translation": "不動明王"
+        },
+        {
+          "id": "s11-t12",
+          "text": "の",
+          "start": 23,
+          "end": 24,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "連体修飾"
+          },
+          "translation": "の",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s11-t13",
+          "text": "火炎",
+          "start": 24,
+          "end": 26,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "くわえん",
+          "translation": "火炎"
+        },
+        {
+          "id": "s11-t14",
+          "text": "を",
+          "start": 26,
+          "end": 27,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "対象"
+          },
+          "translation": "を",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s11-t15",
+          "text": "、",
+          "start": 27,
+          "end": 28,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s11-t16",
+          "text": "あしく",
+          "start": 28,
+          "end": 31,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "形容詞",
+            "conjugationType": "ク活用",
+            "conjugationForm": "連用形",
+            "baseForm": "あし"
+          },
+          "translation": "下手に・悪く",
+          "grammarRefId": "keiyoshi-ku"
+        },
+        {
+          "id": "s11-t17",
+          "text": "書き",
+          "start": 31,
+          "end": 33,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "カ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "書く"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s11-t18",
+          "text": "ける",
+          "start": 33,
+          "end": 35,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（詠嘆）",
+            "conjugationForm": "連体形",
+            "baseForm": "けり"
+          },
+          "translation": "〜ていた",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s11-t19",
+          "text": "なれ",
+          "start": 35,
+          "end": 37,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "断定",
+            "conjugationForm": "已然形",
+            "baseForm": "なり"
+          },
+          "translation": "〜なのだ",
+          "grammarRefId": "jodoshi-nari"
+        },
+        {
+          "id": "s11-t20",
+          "text": "。",
+          "start": 37,
+          "end": 38,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "originalText": "今見れば、かうこそ燃えけれと、心得つるなり。これこそ、せうとくよ。」と言ひて、",
+      "modernTranslation": "今見ると、このように燃えるのだと、理解できたのだ。これこそ、得だよ。」と言って、",
+      "tokens": [
+        {
+          "id": "s12-t1",
+          "text": "今",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "いま"
+        },
+        {
+          "id": "s12-t2",
+          "text": "見れ",
+          "start": 1,
+          "end": 3,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "マ行上一段活用",
+            "conjugationForm": "已然形",
+            "baseForm": "見る"
+          },
+          "grammarRefId": "doushi-kami-ichidan"
+        },
+        {
+          "id": "s12-t3",
+          "text": "ば",
+          "start": 3,
+          "end": 4,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "順接確定"
+          },
+          "translation": "〜と",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s12-t4",
+          "text": "、",
+          "start": 4,
+          "end": 5,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s12-t5",
+          "text": "かう",
+          "start": 5,
+          "end": 7,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "このように"
+        },
+        {
+          "id": "s12-t6",
+          "text": "こそ",
+          "start": 7,
+          "end": 9,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "強調（係助詞）"
+          },
+          "translation": "こそ（〜こそ）",
+          "grammarRefId": "kakari-musubi"
+        },
+        {
+          "id": "s12-t7",
+          "text": "燃え",
+          "start": 9,
+          "end": 11,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ヤ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "燃ゆ"
+          },
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s12-t8",
+          "text": "けれ",
+          "start": 11,
+          "end": 13,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（詠嘆）",
+            "conjugationForm": "已然形",
+            "baseForm": "けり"
+          },
+          "translation": "〜るのだ",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s12-t9",
+          "text": "と",
+          "start": 13,
+          "end": 14,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s12-t10",
+          "text": "、",
+          "start": 14,
+          "end": 15,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s12-t11",
+          "text": "心得",
+          "start": 15,
+          "end": 17,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ア行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "心得"
+          },
+          "furigana": "こころえ",
+          "translation": "理解する・わかる",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s12-t12",
+          "text": "つる",
+          "start": 17,
+          "end": 19,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "完了",
+            "conjugationForm": "連体形",
+            "baseForm": "つ"
+          },
+          "translation": "〜た",
+          "grammarRefId": "jodoshi-tsu"
+        },
+        {
+          "id": "s12-t13",
+          "text": "なり",
+          "start": 19,
+          "end": 21,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "断定",
+            "conjugationForm": "終止形",
+            "baseForm": "なり"
+          },
+          "translation": "〜のだ",
+          "grammarRefId": "jodoshi-nari"
+        },
+        {
+          "id": "s12-t14",
+          "text": "。",
+          "start": 21,
+          "end": 22,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s12-t15",
+          "text": "これ",
+          "start": 22,
+          "end": 24,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "代名詞"
+          }
+        },
+        {
+          "id": "s12-t16",
+          "text": "こそ",
+          "start": 24,
+          "end": 26,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "強調（係助詞）"
+          },
+          "translation": "こそ",
+          "grammarRefId": "kakari-musubi"
+        },
+        {
+          "id": "s12-t17",
+          "text": "、",
+          "start": 26,
+          "end": 27,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s12-t18",
+          "text": "せうとく",
+          "start": 27,
+          "end": 31,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "得・もうけもの"
+        },
+        {
+          "id": "s12-t19",
+          "text": "よ",
+          "start": 31,
+          "end": 32,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "詠嘆（終助詞）"
+          },
+          "translation": "よ",
+          "grammarRefId": "joshi-shujoshi"
+        },
+        {
+          "id": "s12-t20",
+          "text": "。」",
+          "start": 32,
+          "end": 34,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s12-t21",
+          "text": "と",
+          "start": 34,
+          "end": 35,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s12-t22",
+          "text": "言ひ",
+          "start": 35,
+          "end": 37,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "言ふ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s12-t23",
+          "text": "て",
+          "start": 37,
+          "end": 38,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s12-t24",
+          "text": "、",
+          "start": 38,
+          "end": 39,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "originalText": "「この道を立てて世に立たむとする人は、かくこそ練りたるものなれ。」と言ひけるとぞ。",
+      "modernTranslation": "「この（絵の）道を一筋に立てて世間で生きていこうとする人は、このように修練を積んだものなのだ。」と言ったということだ。",
+      "tokens": [
+        {
+          "id": "s13-t1",
+          "text": "「",
+          "start": 0,
+          "end": 1,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s13-t2",
+          "text": "この",
+          "start": 1,
+          "end": 3,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "連体詞"
+          }
+        },
+        {
+          "id": "s13-t3",
+          "text": "道",
+          "start": 3,
+          "end": 4,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "みち",
+          "translation": "（絵の）道"
+        },
+        {
+          "id": "s13-t4",
+          "text": "を",
+          "start": 4,
+          "end": 5,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "対象"
+          },
+          "translation": "を",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s13-t5",
+          "text": "立て",
+          "start": 5,
+          "end": 7,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "タ行下二段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "立つ"
+          },
+          "translation": "打ち立てる",
+          "grammarRefId": "doushi-shimo-nidan"
+        },
+        {
+          "id": "s13-t6",
+          "text": "て",
+          "start": 7,
+          "end": 8,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "接続"
+          },
+          "translation": "て",
+          "grammarRefId": "joshi-setsuzoku"
+        },
+        {
+          "id": "s13-t7",
+          "text": "世",
+          "start": 8,
+          "end": 9,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "furigana": "よ",
+          "translation": "世間"
+        },
+        {
+          "id": "s13-t8",
+          "text": "に",
+          "start": 9,
+          "end": 10,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "場所"
+          },
+          "translation": "に",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s13-t9",
+          "text": "立た",
+          "start": 10,
+          "end": 12,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "タ行四段活用",
+            "conjugationForm": "未然形",
+            "baseForm": "立つ"
+          },
+          "translation": "生きていく",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s13-t10",
+          "text": "む",
+          "start": 12,
+          "end": 13,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "意志",
+            "conjugationForm": "終止形"
+          },
+          "translation": "〜しよう",
+          "grammarRefId": "jodoshi-mu"
+        },
+        {
+          "id": "s13-t11",
+          "text": "と",
+          "start": 13,
+          "end": 14,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s13-t12",
+          "text": "する",
+          "start": 14,
+          "end": 16,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "サ行変格活用",
+            "conjugationForm": "連体形",
+            "baseForm": "す"
+          },
+          "grammarRefId": "doushi-sahen"
+        },
+        {
+          "id": "s13-t13",
+          "text": "人",
+          "start": 16,
+          "end": 17,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          }
+        },
+        {
+          "id": "s13-t14",
+          "text": "は",
+          "start": 17,
+          "end": 18,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "主題"
+          },
+          "translation": "は",
+          "grammarRefId": "joshi-fuku-kakari"
+        },
+        {
+          "id": "s13-t15",
+          "text": "、",
+          "start": 18,
+          "end": 19,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s13-t16",
+          "text": "かく",
+          "start": 19,
+          "end": 21,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "副詞"
+          },
+          "translation": "このように"
+        },
+        {
+          "id": "s13-t17",
+          "text": "こそ",
+          "start": 21,
+          "end": 23,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "強調（係助詞）"
+          },
+          "translation": "こそ",
+          "grammarRefId": "kakari-musubi"
+        },
+        {
+          "id": "s13-t18",
+          "text": "練り",
+          "start": 23,
+          "end": 25,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ラ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "練る"
+          },
+          "furigana": "ねり",
+          "translation": "修練する",
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s13-t19",
+          "text": "たる",
+          "start": 25,
+          "end": 27,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "存続",
+            "conjugationForm": "連体形",
+            "baseForm": "たり"
+          },
+          "translation": "〜ている",
+          "grammarRefId": "jodoshi-tari"
+        },
+        {
+          "id": "s13-t20",
+          "text": "もの",
+          "start": 27,
+          "end": 29,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "名詞"
+          },
+          "translation": "ものだ"
+        },
+        {
+          "id": "s13-t21",
+          "text": "なれ",
+          "start": 29,
+          "end": 31,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "断定",
+            "conjugationForm": "已然形",
+            "baseForm": "なり"
+          },
+          "translation": "〜なのだ",
+          "grammarRefId": "jodoshi-nari"
+        },
+        {
+          "id": "s13-t22",
+          "text": "。」",
+          "start": 31,
+          "end": 33,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        },
+        {
+          "id": "s13-t23",
+          "text": "と",
+          "start": 33,
+          "end": 34,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s13-t24",
+          "text": "言ひ",
+          "start": 34,
+          "end": 36,
+          "layer": 1,
+          "grammarTag": {
+            "pos": "動詞",
+            "conjugationType": "ハ行四段活用",
+            "conjugationForm": "連用形",
+            "baseForm": "言ふ"
+          },
+          "grammarRefId": "doushi-yodan"
+        },
+        {
+          "id": "s13-t25",
+          "text": "ける",
+          "start": 36,
+          "end": 38,
+          "layer": 2,
+          "grammarTag": {
+            "pos": "助動詞",
+            "meaning": "過去（伝聞）",
+            "conjugationForm": "連体形",
+            "baseForm": "けり"
+          },
+          "translation": "〜た（という）",
+          "grammarRefId": "jodoshi-keri"
+        },
+        {
+          "id": "s13-t26",
+          "text": "と",
+          "start": 38,
+          "end": 39,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "引用"
+          },
+          "translation": "と",
+          "grammarRefId": "joshi-kaku"
+        },
+        {
+          "id": "s13-t27",
+          "text": "ぞ",
+          "start": 39,
+          "end": 40,
+          "layer": 3,
+          "grammarTag": {
+            "pos": "助詞",
+            "meaning": "強調（係助詞）"
+          },
+          "translation": "（〜ということだ）",
+          "grammarRefId": "kakari-musubi"
+        },
+        {
+          "id": "s13-t28",
+          "text": "。",
+          "start": 40,
+          "end": 41,
+          "layer": 0,
+          "grammarTag": {
+            "pos": "記号"
+          }
+        }
+      ]
+    }
+  ]
+}

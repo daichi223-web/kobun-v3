@@ -1,0 +1,76 @@
+{
+  "textId": "ebutsu-shi-ryoshu",
+  "tokenAnalyses": [
+    {
+      "tokenId": "s1-t8",
+      "reasoning": [
+        { "question": "「いふ」の活用は？", "answer": "ハ行四段活用・連体形", "explanation": "「いふ」（言う）の連体形。体言的に使われている。" }
+      ]
+    },
+    {
+      "tokenId": "s1-t11",
+      "reasoning": [
+        { "question": "「けり」の意味は？", "answer": "過去（伝聞）", "explanation": "物語の地の文で「けり」は伝聞の過去。「〜であった（そうだ）」" },
+        { "question": "「けり」の活用形は？", "answer": "終止形", "explanation": "文末なので終止形。「けら・○・けり・ける・けれ・○」の終止形。" }
+      ]
+    },
+    {
+      "tokenId": "s2-t8",
+      "reasoning": [
+        { "question": "「来」の読みは？", "answer": "「き」（連用形）", "explanation": "カ行変格活用「来（く）」の連用形「き」。接続助詞「て」に接続するため連用形。" }
+      ]
+    },
+    {
+      "tokenId": "s2-t13",
+      "reasoning": [
+        { "question": "「けれ」は何の活用形？", "answer": "「けり」の已然形", "explanation": "接続助詞「ば」が接続するので已然形。「けら・○・けり・ける・けれ・○」。" },
+        { "question": "「已然形＋ば」の意味は？", "answer": "順接確定条件", "explanation": "「〜したので」「〜したところ」の意味。原因・結果を表す。" }
+      ]
+    },
+    {
+      "tokenId": "s2-t22",
+      "reasoning": [
+        { "question": "「に」は何？", "answer": "完了の助動詞「ぬ」の連用形", "explanation": "「逃げ出で＋に＋けり」で「逃げ出てしまった」。「ぬ」の活用「な・に・ぬ・ぬる・ぬれ・ね」の連用形。" },
+        { "question": "なぜ完了？", "answer": "動作の完了を強調", "explanation": "「にけり」は「完了＋過去」で「〜してしまった（のだった）」と動作の完了を強調する。" }
+      ]
+    },
+    {
+      "tokenId": "s3-t5",
+      "reasoning": [
+        { "question": "「する」は何？", "answer": "使役の助動詞「す」の連体形", "explanation": "「書か＋する」で「書かせる」。四段未然形「書か」に接続するので助動詞「す」。" }
+      ]
+    },
+    {
+      "tokenId": "s5-t15",
+      "reasoning": [
+        { "question": "「たる」は何？", "answer": "完了の助動詞「たり」の連体形", "explanation": "「逃げ出で＋たる」で「逃げ出した（もの）を」。存続・完了を表す。" }
+      ]
+    },
+    {
+      "tokenId": "s8-t28",
+      "reasoning": [
+        { "question": "ここの「けり」の意味は？", "answer": "過去（伝聞）", "explanation": "地の文の文末「けり」は伝聞過去。物語の語り手視点。" }
+      ]
+    },
+    {
+      "tokenId": "s9-t14",
+      "reasoning": [
+        { "question": "ここの「ける」の意味は？", "answer": "過去（詠嘆）", "explanation": "会話文中の「けり」（連体形「ける」）は詠嘆。「わろく書きけるものかな」で「ひどく描いていたものだなあ」。" }
+      ]
+    },
+    {
+      "tokenId": "s10-t16",
+      "reasoning": [
+        { "question": "「べき」は何？", "answer": "「べし」の連体形", "explanation": "「おはしますべきか」で「いらっしゃってよいのか」。「べし」は当然の意味。" },
+        { "question": "「べし」の接続は？", "answer": "終止形接続", "explanation": "「おはします」はサ行四段の終止形。敬語動詞「おはします」は四段活用。" }
+      ]
+    },
+    {
+      "tokenId": "s12-t8",
+      "reasoning": [
+        { "question": "「けれ」の意味は？", "answer": "過去（詠嘆）", "explanation": "「かうこそ燃えけれ」で「このように燃えるのだったなあ」。係助詞「こそ」の結びで已然形。詠嘆の意味。" },
+        { "question": "なぜ已然形？", "answer": "係り結びの法則", "explanation": "「こそ」は結びが已然形になる。「こそ…已然形」。" }
+      ]
+    }
+  ]
+}
