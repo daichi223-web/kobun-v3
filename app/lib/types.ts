@@ -26,7 +26,14 @@ export interface LearningPoints {
 export interface LayerPoints {
   layer: LayerId;
   label: string;
-  points: string[];
+  keyPoint: string;
+  points: LearningPointItem[];
+  studySteps?: string[];
+}
+
+export interface LearningPointItem {
+  text: string;
+  priority: SectionPriority;
 }
 
 export interface LayerDefinition {
