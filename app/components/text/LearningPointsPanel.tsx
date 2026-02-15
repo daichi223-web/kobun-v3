@@ -25,13 +25,13 @@ export function LearningPointsPanel({
   currentLayer,
 }: LearningPointsPanelProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [showOverview, setShowOverview] = useState(false);
+  const [showSteps, setShowSteps] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
 
   const layerPoints = learningPoints.byLayer.find(
     (lp) => lp.layer === currentLayer
   );
 
-  // Sort points by priority
   const sortedPoints = layerPoints
     ? [...layerPoints.points].sort((a, b) => {
         const order: Record<SectionPriority, number> = {
@@ -64,82 +64,67 @@ export function LearningPointsPanel({
         </span>
       </button>
 
-      {isOpen && (
-        <div className="px-4 pb-4 space-y-3 border-t border-sumi/10">
-          {/* レイヤーの要点（1行サマリー） */}
-          {layerPoints?.keyPoint && (
-            <div className="pt-3 px-3 py-2 bg-shu/5 border border-shu/20 rounded-lg">
-              <p className="text-xs font-bold text-shu leading-relaxed">
-                {layerPoints.keyPoint}
-              </p>
-            </div>
-          )}
+      {isOpen && layerPoints && (
+        <div className="px-4 pb-3 space-y-2 border-t border-sumi/10">
+          {/* 要点（1行サマリー） — 常に表示 */}
+          <p className="pt-3 text-xs font-bold text-shu leading-relaxed">
+            {layerPoints.keyPoint}
+          </p>
 
-          {/* 覚える手順 */}
-          {layerPoints?.studySteps && layerPoints.studySteps.length > 0 && (
-            <div className="px-3 py-2 bg-kin/5 border border-kin/20 rounded-lg">
-              <h3 className="text-xs font-bold text-kin mb-1.5">覚える手順</h3>
-              <ol className="space-y-1">
-                {layerPoints.studySteps.map((step, i) => (
-                  <li key={i} className="text-xs leading-relaxed flex gap-1.5">
-                    <span className="shrink-0 w-4 h-4 rounded-full bg-kin text-white text-[10px] font-bold flex items-center justify-center mt-0.5">
-                      {i + 1}
-                    </span>
-                    <span>{step}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          )}
-
-          {/* レイヤーのポイント（軽重付き） */}
-          {sortedPoints.length > 0 && (
-            <div className="space-y-1.5">
-              <h3 className="text-xs font-bold text-scaffold pt-1">
-                この単元のポイント
-              </h3>
-              {sortedPoints.map((point, i) => (
-                <div
-                  key={i}
-                  className="flex gap-2 items-start text-xs leading-relaxed"
-                >
-                  <span
-                    className={`shrink-0 mt-0.5 px-1 py-0.5 text-[9px] font-bold rounded border ${priorityStyle[point.priority]}`}
-                  >
-                    {priorityLabel[point.priority]}
-                  </span>
-                  <span>{point.text}</span>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* 単元の概要（折りたたみ） */}
-          <div className="border-t border-sumi/10 pt-2">
-            <button
-              onClick={() => setShowOverview(!showOverview)}
-              className="w-full flex items-center justify-between text-xs text-scaffold hover:text-sumi transition-colors"
-            >
-              <span className="font-bold">単元の概要</span>
-              <span
-                className={`transition-transform ${showOverview ? "rotate-180" : ""}`}
+          {/* 覚える手順（折りたたみ） */}
+          {layerPoints.studySteps && layerPoints.studySteps.length > 0 && (
+            <div>
+              <button
+                onClick={() => setShowSteps(!showSteps)}
+                className="w-full flex items-center justify-between text-xs text-scaffold hover:text-sumi transition-colors py-1"
               >
-                ▼
-              </span>
-            </button>
-            {showOverview && (
-              <ul className="mt-1.5 space-y-1">
-                {learningPoints.overview.map((point, i) => (
-                  <li
-                    key={i}
-                    className="text-xs leading-relaxed pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-sumi/30"
-                  >
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
+                <span className="font-bold">覚える手順</span>
+                <span className={`transition-transform ${showSteps ? "rotate-180" : ""}`}>▼</span>
+              </button>
+              {showSteps && (
+                <ol className="space-y-1 mt-1 px-2 py-2 bg-kin/5 border border-kin/20 rounded">
+                  {layerPoints.studySteps.map((step, i) => (
+                    <li key={i} className="text-xs leading-relaxed flex gap-1.5">
+                      <span className="shrink-0 w-4 h-4 rounded-full bg-kin text-white text-[10px] font-bold flex items-center justify-center mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+            </div>
+          )}
+
+          {/* 詳細ポイント（折りたたみ） */}
+          {sortedPoints.length > 0 && (
+            <div>
+              <button
+                onClick={() => setShowDetails(!showDetails)}
+                className="w-full flex items-center justify-between text-xs text-scaffold hover:text-sumi transition-colors py-1"
+              >
+                <span className="font-bold">詳細ポイント</span>
+                <span className={`transition-transform ${showDetails ? "rotate-180" : ""}`}>▼</span>
+              </button>
+              {showDetails && (
+                <div className="space-y-1.5 mt-1">
+                  {sortedPoints.map((point, i) => (
+                    <div
+                      key={i}
+                      className="flex gap-2 items-start text-xs leading-relaxed"
+                    >
+                      <span
+                        className={`shrink-0 mt-0.5 px-1 py-0.5 text-[9px] font-bold rounded border ${priorityStyle[point.priority]}`}
+                      >
+                        {priorityLabel[point.priority]}
+                      </span>
+                      <span>{point.text}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>
